@@ -74,15 +74,27 @@ h1, h2, h3, h4, p {
   margin: 0;
 }
 
-// .container-fluid {
-//   padding: 0;
-// }
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
 
 body {
     height: 100%;
     font-family: "Helvetica", sans-serif;
     
     background: $very-dark-blue
+}
+
+.view-project {
+  font-family: pt-mono,monospace;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+hr {
+  border-top: 2px solid $white;
 }
 
 // Navbar
@@ -158,11 +170,73 @@ body {
 
 .view-work-container {
 
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+
+  margin-bottom: 4rem;
+
   .view-work-button {
     background-color: transparent;
     border: none;
+    padding: 0;
+    font-size: 1.4rem;
+    letter-spacing: .3rem;
   }
+}
+
+.concert-builder-container, .orchesnation-container, .mars-rover-container {
+  h4 {
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+.view-project-button {
+
+  margin-top: 2rem;
+
+  .view-project {
+    margin-bottom: 0;
+  }
+}
+
+.project-tag {
+  height: 2rem;
+  border-radius: 25px;
+  background-color: #FFFFFF19;
+  color: $white;
+  display: block;
+}
+
+.concert-builder-image {
+  max-width: 100%;
+}
+
+.view-all-projects-container {
+  position: relative;
+
+  .can-image {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: -10%;
+  }
+
+}
+
+// Footer
+
+.footer-container {
+  margin: 0;
+  padding: 0;
+  background-color: $black;
 }
 
 

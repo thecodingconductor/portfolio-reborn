@@ -1,0 +1,73 @@
+import React from 'react';
+import {Container} from 'react-bootstrap'
+import ConcertBuilder from '../assets/concertBuilderHome.png'
+import OrchesNation from '../assets/orchesNationHome.png'
+import MarsRover from '../assets/marsRoverHome.png'
+import ArrowMobile from '../assets/arrow-mobile.svg'
+import Can from '../assets/img-can.svg'
+
+const FeaturedProjects = () => {
+    return (
+       <Container fluid>
+           <h1>Featured Projects</h1>
+           <hr />
+           <Container className="concert-builder-container" fluid>
+               <h4>Concert Builder</h4>
+               <p>
+                   Full-stack application designed to assist orchestra conductors to research, develop, and plan concerts.
+               </p>
+               <img src={ConcertBuilder} alt="Concert Builder Home Page" className="concert-builder-image"></img>
+                <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
+                    <p className="view-project">VIEW PROJECT</p>
+                    <img src={ArrowMobile} alt="View Project"></img>
+                </Container>
+                <Container className="projects-tags-container" fluid>
+                    <span className="project-tag"> Vanilla Javascript</span>
+                    <span className="project-tag">Flask Backend</span>
+                </Container>
+           </Container>
+           <Container className="orchesnation-container" fluid>
+                <h4>OrchesNation</h4>
+                <p>
+                  Web application to assist orchestral professionals organize their contact lists, and view organizations' personnel. 
+                </p>
+                <img src={OrchesNation} alt="OrchesNation Home Page" className="orches-nation-image"></img>
+                <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
+                    <p className="view-project">VIEW PROJECT</p>
+                    <img src={ArrowMobile} alt="View Project"></img>
+                </Container>
+                <Container className="projects-tags-container" fluid>
+                    <span className="project-tag"> Vanilla Javascript</span>
+                    <span className="project-tag">Flask Backend</span>
+                </Container>
+           </Container>
+           <Container className="mars-rover-container" fluid>
+                <h4>Mars Rover</h4>
+                <p>
+                   User can view randomly generated photos from the Mars Rovers and save favorites.
+                </p>
+                <img src={MarsRover} alt="Mars Rover Home Page" className="mars-rover-image"></img>
+                <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
+                    <p className="view-project">VIEW PROJECT</p>
+                    <img src={ArrowMobile} alt="View Project"></img>
+                </Container>
+                <Container className="projects-tags-container d-flex flex-column align-items-start" fluid>
+                    <span className="project-tag">Vanilla Javascript</span>
+                    <span className="project-tag">Flask Backend</span>
+                </Container>
+           </Container>
+           <Container className="view-all-projects-container" fluid>
+                <img src={Can} alt="Can" className="can-image"></img>
+                <Container fluid style={{ height: '300px'}}>
+
+                </Container>
+                <Container className="view-projects-selector d-flex align-items-center justify-content-between" fluid>
+                    <p className="view-project">VIEW ALL PROJECTS</p>
+                    <img src={ArrowMobile} alt="View Project"></img>
+                </Container>
+           </Container>
+       </Container>
+    )
+}
+
+export default FeaturedProjects

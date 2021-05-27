@@ -2,6 +2,9 @@ import React from 'react'
 import {Container, Button} from 'react-bootstrap'
 import Header from '../components/Header'
 import Headphones from '../assets/img-headphones.svg'
+import FeaturedProjects from '../components/FeaturedProjects'
+import GetInTouch from '../components/GetInTouch'
+import Footer from '../components/Footer'
 
 const HomeScreen = () => {
     return (
@@ -26,10 +29,13 @@ const HomeScreen = () => {
                 </p>
             </Container>
             <Container className="view-work-container">
-                <Button className="view-work-button">
+                <Button className="view-work-button view-project">
                     View My Work
                 </Button>
             </Container>
+            <FeaturedProjects />
+            <GetInTouch />
+            <Footer />
         </Container>
     )
 }
