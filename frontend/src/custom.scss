@@ -1,0 +1,174 @@
+@import "~bootstrap/scss/bootstrap";
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+      @content;
+    }
+  }
+  
+  // Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+      @content;
+    }
+  }
+  
+  // Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+      @content;
+    }
+  }
+  
+  // Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+      @content;
+    }
+  }
+
+// Fonts
+
+@font-face {
+  font-family: 'inter';
+  src: url('./fonts/Inter-VariableFont_slnt\,wght.ttf');
+  font-weight: normal;
+  font-style: normal
+}
+  
+
+//   Colors
+$white: #fff;
+$black: #000;
+$very-dark-blue: #0B1C2C;
+$very-light-green: #00FF4E5D;
+$light-purple: #2700FF6A;
+$sky-blue: #76FFF415;
+$medium-blue: #1B3E60;
+$forest-green: #076F38;
+$dark-blue: #112F4D;
+$gray: #00000029;
+$off-white: #FFFFFF19;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, p {
+  color: $white;
+  font-family: "inter", sans-serif;
+  text-transform: none;
+  margin: 0;
+}
+
+// .container-fluid {
+//   padding: 0;
+// }
+
+body {
+    height: 100%;
+    font-family: "Helvetica", sans-serif;
+    
+    background: $very-dark-blue
+}
+
+// Navbar
+
+.navbar-main {
+
+  height: 6rem;
+
+  .navbar-left {
+    width: 30%;
+  }
+  
+  .navbar-right {
+    width: 70%;
+  }
+  
+}
+
+// Main Page
+
+.main-title-container {
+
+  // Title Text
+
+  .main-title{
+    font-family: 'inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 200%;
+    text-align: center;
+
+    .conductor-text-span, .streamer-text-span {
+      position: relative;
+    }
+
+    .conductor-line-span {
+      position: absolute;
+      top: 0;
+      height: 10px;
+      width: 100%;
+      background-color: pink;
+    }
+  }
+
+}
+
+// Headphones
+
+.headphone-spacer {
+  height: 425px;
+}
+
+.headphones-container {
+
+  position: relative;
+
+  .headphones-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-63%)
+  }
+}
+
+// About me
+
+.about-me-container {
+  .about-me-text {
+    line-height: 200%;
+  }
+}
+
+// View Work
+
+.view-work-container {
+
+  margin-top: 1rem;
+  .view-work-button {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+
+
+
+
+
+
+
