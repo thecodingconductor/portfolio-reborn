@@ -6,8 +6,8 @@ import Twitch from '../assets/icon-twitter.svg'
 
 const Footer = () => {
     return (
-       <Container className="footer-container d-flex flex-column align-items-center justify-content-between" fluid>
-           <Container fluid>
+       <Container className="footer-container d-flex flex-column align-items-center justify-content-between">
+           <Container className="follow-container" fluid>
                <h1>Follow</h1>
            </Container>
            <Container className="social-icons d-flex align-items-center justify-content-between" fluid>
@@ -15,7 +15,7 @@ const Footer = () => {
                 <img src={Twitter} alt="Twitter Icon"></img>
                 <img src={Twitch} alt="Twitch Icon"></img>
            </Container>
-           <Container fluid>
+           <Container className="copyright-container" fluid>
                 <p>Copyright 2021 Tristan Rais-Sherman</p>
            </Container>
        </Container>

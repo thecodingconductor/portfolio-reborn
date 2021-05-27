@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Headphones from '../assets/img-headphones.svg'
 import FeaturedProjects from '../components/FeaturedProjects'
 import GetInTouch from '../components/GetInTouch'
-import Footer from '../components/Footer'
+
 
 const HomeScreen = () => {
     return (
@@ -35,7 +35,7 @@ const HomeScreen = () => {
             </Container>
             <FeaturedProjects />
             <GetInTouch />
-            <Footer />
+          
         </Container>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container} from 'react-bootstrap'
+import {Container, Button} from 'react-bootstrap'
 import ConcertBuilder from '../assets/concertBuilderHome.png'
 import OrchesNation from '../assets/orchesNationHome.png'
 import MarsRover from '../assets/marsRoverHome.png'
@@ -22,8 +22,8 @@ const FeaturedProjects = () => {
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
                 <Container className="projects-tags-container" fluid>
-                    <span className="project-tag"> Vanilla Javascript</span>
-                    <span className="project-tag">Flask Backend</span>
+                    <Button className="project-tag">Vanilla Javascript</Button>
+                    <Button className="project-tag">Flask Backend</Button>
                 </Container>
            </Container>
            <Container className="orchesnation-container" fluid>
@@ -37,8 +37,9 @@ const FeaturedProjects = () => {
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
                 <Container className="projects-tags-container" fluid>
-                    <span className="project-tag"> Vanilla Javascript</span>
-                    <span className="project-tag">Flask Backend</span>
+                    <Button className="project-tag">React Hooks</Button>
+                    <Button className="project-tag">ExpressJS, MongoDB</Button>
+                    <Button className="project-tag">REST API</Button>
                 </Container>
            </Container>
            <Container className="mars-rover-container" fluid>
@@ -52,8 +53,8 @@ const FeaturedProjects = () => {
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
                 <Container className="projects-tags-container d-flex flex-column align-items-start" fluid>
-                    <span className="project-tag">Vanilla Javascript</span>
-                    <span className="project-tag">Flask Backend</span>
+                    <Button className="project-tag">React Hooks</Button>
+                    <Button className="project-tag">Sass</Button>
                 </Container>
            </Container>
            <Container className="view-all-projects-container" fluid>
