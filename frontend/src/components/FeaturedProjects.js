@@ -9,8 +9,13 @@ import Can from '../assets/img-can.svg'
 const FeaturedProjects = () => {
     return (
        <Container fluid>
-           <h1>Featured Projects</h1>
-           <hr />
+           <h1 className="featured-projects-text">
+               Featured Projects
+
+               <span class="underline-full-width"></span>
+           
+           </h1>
+           
            <Container className="concert-builder-container" fluid>
                <h4>Concert Builder</h4>
                <p>
@@ -18,7 +23,10 @@ const FeaturedProjects = () => {
                </p>
                <img src={ConcertBuilder} alt="Concert Builder Home Page" className="concert-builder-image"></img>
                 <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
-                    <p className="view-project">VIEW PROJECT</p>
+                    <p className="view-project">
+                        VIEW PROJECT
+                        <span className="line-through-work"></span>
+                    </p>
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
                 <Container className="projects-tags-container" fluid>
@@ -33,7 +41,10 @@ const FeaturedProjects = () => {
                 </p>
                 <img src={OrchesNation} alt="OrchesNation Home Page" className="orches-nation-image"></img>
                 <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
-                    <p className="view-project">VIEW PROJECT</p>
+                    <p className="view-project">
+                        VIEW PROJECT
+                        <span className="line-through-work"></span>
+                    </p>
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
                 <Container className="projects-tags-container" fluid>
@@ -49,7 +60,10 @@ const FeaturedProjects = () => {
                 </p>
                 <img src={MarsRover} alt="Mars Rover Home Page" className="mars-rover-image"></img>
                 <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
-                    <p className="view-project">VIEW PROJECT</p>
+                    <p className="view-project">
+                        VIEW PROJECT
+                        <span className="line-through-work"></span>
+                    </p>
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
                 <Container className="projects-tags-container d-flex flex-column align-items-start" fluid>
@@ -63,7 +77,10 @@ const FeaturedProjects = () => {
 
                 </Container>
                 <Container className="view-projects-selector d-flex align-items-center justify-content-between" fluid>
-                    <p className="view-project">VIEW ALL PROJECTS</p>
+                    <p className="view-project">
+                        <span className="view-all-line">VIEW ALL</span>
+                        <span className="projects-line">PROJECTS</span> 
+                    </p>
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
            </Container>

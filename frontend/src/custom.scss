@@ -96,6 +96,18 @@ body {
   font-weight: 700;
   font-style: normal;
   margin-bottom: 0;
+  position: relative;
+  
+  .line-through-work, .view-all-line, .projects-line {
+    height: 8px;
+    // width: 80%;
+    left: 0;
+    right: 5%;
+    background-color: rgba(7,111,56, 0.8);
+    position: absolute;
+    bottom: 10%;
+  }
+  
 }
 
 hr {
@@ -114,6 +126,10 @@ hr {
   
   .navbar-right {
     width: 70%;
+
+    p {
+      font-weight: bold;
+    }
   }
   
 }
@@ -131,19 +147,32 @@ hr {
     line-height: 200%;
     text-align: center;
 
-    .conductor-text-span, .streamer-text-span {
+    .text-line-conductor, .text-line-streamer {
+      display: inline-block;
       position: relative;
-    }
-
-    .conductor-line-span {
-      position: absolute;
-      top: 0;
-      height: 10px;
-      width: 100%;
-      background-color: pink;
     }
   }
 
+}
+
+.line-through-conductor {
+  height: 5px;
+  // width: 80%;
+  background-color: rgba(163,255,191, 0.7);
+  position: absolute;
+  bottom: 35%;
+  left: 0;
+  right: 10%;
+}
+
+.line-through-streamer {
+  height: 5px;
+  // width: 80%;
+  left: 0;
+  right: 10%;
+  background-color: rgba(164,148,255, 0.7);
+  position: absolute;
+  bottom: 35%;
 }
 
 // Headphones
@@ -185,7 +214,32 @@ hr {
     padding: 0;
     font-size: 1.4rem;
     letter-spacing: .3rem;
+    position: relative;
+
+    .line-through-work {
+      height: 8px;
+      // width: 80%;
+      left: 0;
+      right: 5%;
+      background-color: rgba(7,111,56, 0.8);
+      position: absolute;
+      bottom: 10%;
+    }
   }
+
+
+}
+
+.featured-projects-text {
+  position: relative;
+    .underline-full-width {
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      left: -20%;
+      right: -20%;
+      bottom: 20%;
+    }
 }
 
 .concert-builder-container, .orchesnation-container, .mars-rover-container {
