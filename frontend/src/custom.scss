@@ -67,6 +67,10 @@ $off-white: #FFFFFF19;
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 h1, h2, h3, h4, p {
   color: $white;
   font-family: "inter", sans-serif;
@@ -160,7 +164,7 @@ hr {
   // width: 80%;
   background-color: rgba(163,255,191, 0.7);
   position: absolute;
-  bottom: 35%;
+  bottom: 25%;
   left: 0;
   right: 10%;
 }
@@ -172,7 +176,7 @@ hr {
   right: 10%;
   background-color: rgba(164,148,255, 0.7);
   position: absolute;
-  bottom: 35%;
+  bottom: 25%;
 }
 
 // Headphones
@@ -260,7 +264,8 @@ hr {
 
 .view-projects-selector {
   margin-bottom: 4rem;
-
+  height: 4rem;
+  
   .view-project {
     font-size: 1.4rem;
     width: 50%;
@@ -287,9 +292,11 @@ hr {
   background-color: #FFFFFF19;
   color: $white;
   display: block;
-  font-family: pt-mono,monospace;
-  font-weight: 400;
+  font-family: pt-mono ,monospace;
+  font-weight: 700;
   font-style: normal;
+  font-size: .9rem;
+  letter-spacing: .3rem;
   margin-bottom: 0;
   outline: none;
   border: none;
@@ -327,6 +334,7 @@ hr {
     bottom: 0;
     top: 0;
     left: -10%;
+    max-width: 100%;
   }
 
 }
@@ -348,6 +356,10 @@ hr {
       letter-spacing: .4rem;
 
       margin-bottom: 6rem;
+
+      span {
+        display: inline-block;
+      }
     }
 }
 
