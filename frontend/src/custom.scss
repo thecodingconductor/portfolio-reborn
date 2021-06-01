@@ -90,6 +90,30 @@ body {
     background: $very-dark-blue
 }
 
+// Mobile Nav
+
+.mobile-nav-container {
+  position:absolute;
+  background-color: $dark-blue;
+  top: 0;
+  bottom: 0;
+  // left: 0;
+  right: 10%;
+  z-index: 999;
+
+  .nav-content-wrapper {
+    margin: 1rem;
+
+    .close-mobile-nav {
+      padding-left: 1rem;
+    }
+  }
+
+  .mobile-nav-title {
+    font-size: .6rem;
+  }
+}
+
 .main-body-container {
   padding-left: 2.3rem;
   padding-right: 2.3rem;
