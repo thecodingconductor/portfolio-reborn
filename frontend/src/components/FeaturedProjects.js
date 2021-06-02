@@ -12,7 +12,7 @@ const FeaturedProjects = () => {
            <h1 className="featured-projects-text">
                Featured Projects
 
-               <span class="underline-full-width"></span>
+               <span className="underline-full-width"></span>
            
            </h1>
            

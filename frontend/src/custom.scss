@@ -95,23 +95,83 @@ body {
 .mobile-nav-container {
   position:absolute;
   background-color: $dark-blue;
+  
   top: 0;
   bottom: 0;
-  // left: 0;
-  right: 10%;
+  left: 0;
+  width: 85%;
   z-index: 999;
 
   .nav-content-wrapper {
-    margin: 1rem;
+    margin-top: 1rem;
+    // padding: 1rem;
+    height: 95%;
 
-    .close-mobile-nav {
-      padding-left: 1rem;
+    // Mobile Nav Header
+    .header-nav-overlay {
+
+      .mobile-close-container {
+        width: 30%;
+
+        
+      }
+
+      .mobile-nav-title-container {
+
+        width: 70%;
+    
+        .mobile-nav-title {
+          font-size: .85rem;
+          font-weight: 700;
+        }
+    
+      }
+
     }
+
+    // Mobile Nav Links
+
+    .mobile-nav-link-container {
+      .mobile-nav-link-wrapper {
+
+        margin-top: 4rem;
+        .mobile-nav-link {
+          padding: 0;
+          margin: 1rem 0;
+          font-family: 'inter', "Helvetica", sans-serif;
+          font-weight: 700;
+          font-size: 1.8rem;
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .mobile-nav-footer {
+      margin-top: auto;
+      padding: 0;
+     
+
+      .mobile-footer-container {
+
+        width: 80%;
+        margin-left: 0;
+        .copyright-container-mobile {
+          font-size: .6rem;
+          padding-top: 1rem;
+        }
+      }
+    }
+
+
+
+   
   }
 
-  .mobile-nav-title {
-    font-size: .6rem;
-  }
+
+  
+
+ 
 }
 
 .main-body-container {
