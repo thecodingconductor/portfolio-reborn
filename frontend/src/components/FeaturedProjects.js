@@ -17,6 +17,7 @@ const FeaturedProjects = () => {
            </h1>
            
            <Container className="concert-builder-container" fluid>
+        
                <h4>Concert Builder</h4>
                <p>
                    Full-stack application designed to assist orchestra conductors to research, develop, and plan concerts.

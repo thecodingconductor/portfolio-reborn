@@ -6,7 +6,7 @@ import Twitch from '../assets/icon-twitter.svg'
 
 const Footer = () => {
     return (
-       <Container className="footer-container d-flex flex-column align-items-center justify-content-between">
+       <Container className="footer-container d-flex flex-column align-items-center justify-content-between" fluid>
            <Container className="follow-container" fluid>
                <h1>Follow</h1>
            </Container>

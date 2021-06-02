@@ -602,6 +602,13 @@ hr {
   padding-bottom: 2rem;
   background-color: $black;
 
+  @include lg {
+    margin: auto;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    width: 100%;
+  }
+
   .follow-container {
     margin-bottom: 4rem;
   }
