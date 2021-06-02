@@ -11,7 +11,7 @@ function App() {
     <>
       <NavState>
         <Router>
-          <Container fluid>
+          <Container className="global-container" fluid>
             <Route exact path='/' component={HomeScreen}></Route>
             <Footer />
           </Container>

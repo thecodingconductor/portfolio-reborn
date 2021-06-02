@@ -68,7 +68,7 @@ $off-white: #FFFFFF19;
 }
 
 html {
-  overflow-x: hidden;
+  height: 100%;
 }
 
 h1, h2, h3, h4, p {
@@ -86,9 +86,20 @@ h1, h2, h3, h4, p {
 body {
     height: 100%;
     font-family: "Helvetica", sans-serif;
-    
     background: $very-dark-blue
 }
+
+// #root {
+//   overflow: hidden;
+// }
+
+// .global-container {
+//   overflow: hidden;
+// }
+
+// .main-body-container {
+//   overflow: hidden;
+// }
 
 // Mobile Nav
 
@@ -99,7 +110,7 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 85%;
+  width: 90%;
   z-index: 999;
 
   .nav-content-wrapper {
@@ -117,7 +128,7 @@ body {
       }
 
       .mobile-nav-title-container {
-
+        padding: 0;
         width: 70%;
     
         .mobile-nav-title {

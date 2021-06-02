@@ -1,12 +1,30 @@
-import React from 'react'
+import React, {useEffect, useContext, useRef} from 'react'
 import {Container, Button} from 'react-bootstrap'
 import Header from '../components/Header'
 import Headphones from '../assets/img-headphones.svg'
 import FeaturedProjects from '../components/FeaturedProjects'
 import GetInTouch from '../components/GetInTouch'
+import NavContext from '../context/nav/navContext'
 
 
 const HomeScreen = () => {
+
+    const navContext = useContext(NavContext);
+    const {navOpen} = navContext;
+
+
+    // const mainContainer = useRef(null)
+
+
+
+    // useEffect(() => {
+    //     if(navOpen) {
+    //        mainContainer.current.style.overflow = 'hidden';
+    //     } else {
+    //         document.body.style.overflow = ''
+    //     }
+    // }, [navOpen])
+
     return (
         <Container className="main-body-container">
             <Header />

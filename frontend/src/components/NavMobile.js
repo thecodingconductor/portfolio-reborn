@@ -5,9 +5,11 @@ import NavClose from '../assets/icon-close.svg'
 import MobileNavFooter from '../components/MobileNavFooter'
 import NavContext from '../context/nav/navContext'
 import ProjectsExpanded from '../components/ProjectsExpanded'
-
+import useLockBodyScroll from '../hooks/useLockBodyScroll'
 
 const NavMobile = () => {
+
+    useLockBodyScroll();
 
     const navContext = useContext(NavContext)
 
