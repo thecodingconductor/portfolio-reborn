@@ -4,16 +4,21 @@ import {Container, Nav} from 'react-bootstrap';
 import NavClose from '../assets/icon-close.svg'
 import MobileNavFooter from '../components/MobileNavFooter'
 import NavContext from '../context/nav/navContext'
+import ProjectsExpanded from '../components/ProjectsExpanded'
 
 
 const NavMobile = () => {
 
     const navContext = useContext(NavContext)
 
-    const {mobileNavAction, projectsExpanded, navOpen} = navContext
+    const {mobileNavAction, expandProjects, projectsExpanded, navOpen} = navContext
 
     const closeMobileHandler = () => {
         navOpen ? mobileNavAction(false) : mobileNavAction(true)
+    }
+
+    const projectsHandler = () => {
+        projectsExpanded ? expandProjects(false) : expandProjects(true)
     }
 
     return (
@@ -29,7 +34,10 @@ const NavMobile = () => {
                 </Container>
                 <Container className="mobile-nav-link-container">
                     <Nav className="flex-column mobile-nav-link-wrapper">
-                        <Nav.Link className="mobile-nav-link">Projects</Nav.Link>
+                        <Nav.Link className="mobile-nav-link" onClick={() => projectsHandler()}>Projects</Nav.Link>
+                            {projectsExpanded && 
+                                <ProjectsExpanded />
+                            }
                         <Nav.Link className="mobile-nav-link">Contact</Nav.Link>
                         <Nav.Link className="mobile-nav-link">Twitch</Nav.Link>
                         <Nav.Link className="mobile-nav-link">Conductor Site</Nav.Link>

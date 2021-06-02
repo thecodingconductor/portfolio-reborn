@@ -23,12 +23,22 @@ const NavState = props => {
         })
     }
 
+    const expandProjects = (projectsAction) => {
+        console.log(`projectsAction -> ${projectsAction}`)
+
+        dispatch({
+            type: PROJECTS_EXPANDED,
+            payload: projectsAction
+        })
+    }
+
     return (
         <NavContext.Provider
             value={{
                 projectsExpanded: state.projectsExpanded,
                 navOpen: state.navOpen,
-                mobileNavAction
+                mobileNavAction,
+                expandProjects
             }}>
             {props.children}
         </NavContext.Provider>

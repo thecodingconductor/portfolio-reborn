@@ -12,7 +12,7 @@ export default (state,action) => {
         case PROJECTS_EXPANDED:
             return {
                 ...state,
-                projectsExpanded: true
+                projectsExpanded: action.payload
             };
         default:
             return state;
