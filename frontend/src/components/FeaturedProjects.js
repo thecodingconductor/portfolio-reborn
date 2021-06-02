@@ -8,7 +8,7 @@ import Can from '../assets/img-can.svg'
 
 const FeaturedProjects = () => {
     return (
-       <Container fluid>
+       <Container className="featured-projects-container" fluid>
            <h1 className="featured-projects-text">
                Featured Projects
 

@@ -89,17 +89,6 @@ body {
     background: $very-dark-blue
 }
 
-// #root {
-//   overflow: hidden;
-// }
-
-// .global-container {
-//   overflow: hidden;
-// }
-
-// .main-body-container {
-//   overflow: hidden;
-// }
 
 // Mobile Nav
 
@@ -201,6 +190,9 @@ body {
  
 }
 
+
+// Main Body Container
+
 .main-body-container {
   padding-left: 2.3rem;
   padding-right: 2.3rem;
@@ -231,20 +223,58 @@ hr {
 
 // Navbar
 
-.navbar-main {
+.navbar-main-mobile {
 
   height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: between;
+
+ 
+  
 
   .navbar-left {
     width: 30%;
+
+    .menu-icons {
+       @include lg {
+         display: none;
+       }
+    }
+
+    // .desktop-title-left {
+    //   display: none;
+    // }
+
   }
   
   .navbar-right {
     width: 70%;
+    justify-content: center;
+
+    @include lg {
+      justify-content: flex-end;
+    }
+
+    .desktop-nav-wrapper {
+      width: 60%;
+
+      .desktop-nav-link {
+        color: $white;
+        text-decoration: none;
+      }
+    }
 
     p {
       font-weight: bold;
+
+      @include lg {
+        display: none;
+      }
     }
+
+
   }
   
 }
@@ -261,6 +291,11 @@ hr {
     font-size: 1.4rem;
     line-height: 200%;
     text-align: center;
+
+    @include lg {
+      font-size: 5rem;
+      text-align: left;
+    }
 
     .text-line-conductor, .text-line-streamer {
       display: inline-block;
@@ -290,15 +325,81 @@ hr {
   bottom: 25%;
 }
 
+// Desktop Headphones and About Me
+.desktop-about-me-headphones-container {
+  display: none;
+  
+  @include lg{
+    display: flex;
+    align-items: center;
+    justify-content: between;
+  }
+
+  .desktop-about-me-container {
+    display: none;
+
+    @include lg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start
+
+
+
+    }
+
+    .desktop-view-work-container {
+
+      @include lg {
+        margin-top: 2rem;
+        padding-left: 0;
+      }
+      .view-work-button {
+        @include lg {
+
+          background-color: transparent;
+          border: none;
+          padding: 0;
+          font-size: 1.4rem;
+          letter-spacing: .3rem;
+          position: relative;
+
+        .line-through-work {
+          height: 8px;
+          // width: 80%;
+          left: 0;
+          right: 5%;
+          background-color: rgba(7,111,56, 0.8);
+          position: absolute;
+          bottom: 10%;
+        }
+
+        }
+      }
+    }
+  }
+
+
+}
+
 // Headphones
 
 .headphone-spacer {
   height: 425px;
+
+  @include lg{
+    display: none;
+  }
+  
 }
 
 .headphones-container {
 
   position: relative;
+
+  @include lg {
+    display: none;
+  }
 
   .headphones-image {
     position: absolute;
@@ -310,6 +411,11 @@ hr {
 // About me
 
 .about-me-container {
+
+
+  @include lg {
+    display: none;
+  }
   .about-me-text {
     line-height: 200%;
   }
@@ -322,6 +428,10 @@ hr {
   margin-top: 1.5rem;
 
   margin-bottom: 4rem;
+
+  @include lg {
+    display: none;
+  }
 
   .view-work-button {
     background-color: transparent;
@@ -345,15 +455,25 @@ hr {
 
 }
 
+.featured-projects-container {
+  margin-top: 6rem;
+}
+
 .featured-projects-text {
   position: relative;
     .underline-full-width {
+
       height: 1px;
       background-color: #fff;
       position: absolute;
       left: -20%;
       right: -20%;
       bottom: 20%;
+
+      @include lg {
+        left: -40%;
+        right: -40%;
+      }
     }
 }
 

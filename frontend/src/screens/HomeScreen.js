@@ -36,10 +36,27 @@ const HomeScreen = () => {
                 <span className="text-line-streamer">streamer,
                     <span className="line-through-streamer"></span>
                 </span>
-                and seltzer addict.</h1>
+                <br></br>and seltzer addict.</h1>
             </Container>
             
-            
+            <Container className="desktop-about-me-headphones-container">
+                <Container className="desktop-headphones-container">
+                    <img src={Headphones} alt="Headphones" className="headphones-image"></img>
+                </Container>
+                <Container className="desktop-about-me-container">
+                    <p className="about-me-text">
+                        Thanks for stopping by. I am a self-taught front-end web developer based in New Haven, CT. 
+                        I am a classically trained orchestral conductor, music producer, cellist, and guitarist.
+                    </p>
+                    <Container className="desktop-view-work-container">
+                        <Button className="view-work-button view-project">
+                            View My Work
+                            <span className="line-through-work"></span>
+                        </Button>
+            </Container>
+                </Container>
+            </Container>
+
             <Container className="headphones-container">
                 <img src={Headphones} alt="Headphones" className="headphones-image"></img>
             </Container>
@@ -55,9 +72,7 @@ const HomeScreen = () => {
             <Container className="view-work-container">
                 <Button className="view-work-button view-project">
                     View My Work
-                    <span className="line-through-work">
-
-                    </span>
+                    <span className="line-through-work"></span>
                 </Button>
             </Container>
             <FeaturedProjects />
