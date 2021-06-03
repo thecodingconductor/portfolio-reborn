@@ -29,7 +29,7 @@ const DesktopFeaturedProjects = () => {
                     </p>
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
-                <Container className="projects-tags-container" fluid>
+                <Container className="projects-tags-container d-flex flex-row justify-content-start" fluid>
                     <Button className="project-tag">Vanilla Javascript</Button>
                     <Button className="project-tag">Flask Backend</Button>
                 </Container>
@@ -54,10 +54,11 @@ const DesktopFeaturedProjects = () => {
                     </p>
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
-                <Container className="projects-tags-container" fluid>
-                    <Button className="project-tag">React Hooks</Button>
-                    <Button className="project-tag">ExpressJS, MongoDB</Button>
-                    <Button className="project-tag">REST API</Button>
+                <Container className="projects-tags-container d-flex flex-row justify-content-start" fluid>
+                    <Button className="project-tag-hooks project-tag">React Hooks</Button>
+                    <Button className="project-tag">ExpressJS</Button>
+                    <Button className="project-tag">MongoDB</Button>
+                    <Button className="project-tag-rest project-tag">REST API</Button>
                 </Container>
               </Container>
               <Container className="desktop-project-right">
@@ -80,7 +81,7 @@ const DesktopFeaturedProjects = () => {
                     </p>
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
-                <Container className="projects-tags-container" fluid>
+                <Container className="projects-tags-container d-flex flex-row justify-content-start" fluid>
                 <Button className="project-tag">React Hooks</Button>
                     <Button className="project-tag">Sass</Button>
                 </Container>
@@ -91,6 +92,7 @@ const DesktopFeaturedProjects = () => {
               </Container> 
            </Container>
 
+           <hr className="desktop-project-divider"></hr>
 
            {/* <Container className="orchesnation-container" fluid>
                 <h4>OrchesNation</h4>
@@ -128,10 +130,10 @@ const DesktopFeaturedProjects = () => {
                     <Button className="project-tag">React Hooks</Button>
                     <Button className="project-tag">Sass</Button>
                 </Container>
-           </Container>
+           </Container> */}
            <Container className="view-all-projects-container" fluid>
                 <img src={Can} alt="Can" className="can-image"></img>
-                <Container fluid style={{ height: '300px'}}>
+                <Container className="can-spacer" fluid>
 
                 </Container>
                 <Container className="view-projects-selector d-flex align-items-center justify-content-between" fluid>
@@ -141,7 +143,7 @@ const DesktopFeaturedProjects = () => {
                     </p>
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
-           </Container> */}
+           </Container> 
        </Container>
     )
 }

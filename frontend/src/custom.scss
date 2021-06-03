@@ -86,7 +86,8 @@ h1, h2, h3, h4, p {
 body {
     height: 100%;
     font-family: "Helvetica", sans-serif;
-    background: $very-dark-blue
+    background: $very-dark-blue;
+    overflow-x: hidden;
 }
 
 
@@ -517,6 +518,16 @@ hr {
   }
 }
 
+.desktop-project-divider {
+  margin-left: -500px;
+  margin-right: -500px;
+}
+
+.mobile-project-divider {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
 .view-projects-selector {
   margin-bottom: 4rem;
   height: 4rem;
@@ -556,7 +567,22 @@ hr {
   outline: none;
   border: none;
   margin-top: 1rem;
-  transition: none !important
+  transition: none !important;
+
+  @include lg {
+    margin: auto 1rem;
+  }
+}
+
+.project-tag-hooks, .project-tag-rest {
+  font-size: .6rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  letter-spacing: .2rem;
+}
+
+.project-tag:first-of-type {
+  margin-left: 0;
 }
 
 .project-tag:active {
@@ -590,8 +616,22 @@ hr {
     top: 0;
     left: -10%;
     max-width: 100%;
+
+    @include lg {
+      left: -25%;
+      top: -75%;
+    }
   }
 
+}
+
+.can-spacer {
+
+  height: 300px; 
+
+  @include lg {
+    height: 50px;
+  }
 }
 
 // Get in Touch
