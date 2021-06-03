@@ -35,6 +35,9 @@ const FeaturedProjects = () => {
                     <Button className="project-tag">Flask Backend</Button>
                 </Container>
            </Container>
+
+           <hr className="mobile-project-divider"></hr>
+
            <Container className="orchesnation-container" fluid>
                 <h4>OrchesNation</h4>
                 <p>
@@ -54,6 +57,9 @@ const FeaturedProjects = () => {
                     <Button className="project-tag">REST API</Button>
                 </Container>
            </Container>
+
+           <hr className="mobile-project-divider"></hr>
+
            <Container className="mars-rover-container" fluid>
                 <h4>Mars Rover</h4>
                 <p>

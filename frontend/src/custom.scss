@@ -243,9 +243,13 @@ hr {
        }
     }
 
-    // .desktop-title-left {
-    //   display: none;
-    // }
+    .desktop-title-left {
+      display: none;
+
+      @include lg {
+        display: block;
+      }
+    }
 
   }
   
@@ -259,6 +263,12 @@ hr {
 
     .desktop-nav-wrapper {
       width: 60%;
+
+      display: none;
+
+      @include lg {
+        display: flex;
+      }
 
       .desktop-nav-link {
         color: $white;
@@ -490,6 +500,9 @@ hr {
 
 .concert-builder-container, .orchesnation-container, .mars-rover-container {
 
+  @include lg {
+    margin-top: 4rem;
+  }
 
   h4 {
     font-weight: bold;
@@ -583,6 +596,10 @@ hr {
 
 // Get in Touch
 .get-in-touch-container {
+
+  @include lg {
+    margin-top: 10rem;
+  }
     p {
       text-align: center;
       line-height: 2.3rem;
