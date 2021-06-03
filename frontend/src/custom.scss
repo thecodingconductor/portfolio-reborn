@@ -344,6 +344,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: between;
+    margin-bottom: 6rem;
   }
 
   .desktop-about-me-container {
@@ -483,6 +484,12 @@ hr {
 
 .featured-projects-text {
   position: relative;
+
+
+  @include lg {
+    font-size: 4rem;
+    font-weight: bold;
+  }
     .underline-full-width {
 
       height: 1px;
@@ -499,10 +506,13 @@ hr {
     }
 }
 
+
+
 .concert-builder-container, .orchesnation-container, .mars-rover-container {
 
   @include lg {
     margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   h4 {
@@ -574,6 +584,11 @@ hr {
   }
 }
 
+.project-tag:hover {
+  background-color: #FFFFFF19 !important;
+  text-decoration: none;
+}
+
 .project-tag-hooks, .project-tag-rest {
   font-size: .6rem;
   padding-left: .5rem;
@@ -605,6 +620,12 @@ hr {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
+
+  @include lg {
+    width: 75%;
+    margin: 0 auto;
+    margin-left: 6rem;
+  }
 }
 
 .view-all-projects-container {
@@ -659,6 +680,14 @@ hr {
       span {
         display: inline-block;
       }
+
+      span:first-of-type {
+        @include lg {
+          margin-right: 2rem;
+        }
+      }
+
+    
     }
 }
 
