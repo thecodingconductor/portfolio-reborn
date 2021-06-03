@@ -6,9 +6,9 @@ import MarsRover from '../assets/marsRoverHome.png'
 import ArrowMobile from '../assets/arrow-mobile.svg'
 import Can from '../assets/img-can.svg'
 
-const FeaturedProjects = () => {
+const DesktopFeaturedProjects = () => {
     return (
-       <Container className="featured-projects-container" fluid>
+       <Container className="desktop-featured-projects-container" fluid>
            <h1 className="featured-projects-text">
                Featured Projects
 
@@ -89,4 +89,4 @@ const FeaturedProjects = () => {
     )
 }
 
-export default FeaturedProjects
+export default DesktopFeaturedProjects

@@ -457,6 +457,17 @@ hr {
 
 .featured-projects-container {
   margin-top: 6rem;
+
+  @include lg {
+    display: none
+  }
+}
+
+.desktop-featured-projects-container {
+  display: none;
+  @include lg {
+    display: block;
+  }
 }
 
 .featured-projects-text {

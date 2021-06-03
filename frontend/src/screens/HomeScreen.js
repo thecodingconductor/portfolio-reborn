@@ -3,6 +3,7 @@ import {Container, Button} from 'react-bootstrap'
 import Header from '../components/Header'
 import Headphones from '../assets/img-headphones.svg'
 import FeaturedProjects from '../components/FeaturedProjects'
+import DesktopFeaturedProjects from '../components/DesktopFeaturedProjects'
 import GetInTouch from '../components/GetInTouch'
 import NavContext from '../context/nav/navContext'
 
@@ -76,6 +77,7 @@ const HomeScreen = () => {
                 </Button>
             </Container>
             <FeaturedProjects />
+            <DesktopFeaturedProjects />
             <GetInTouch />
           
         </Container>
