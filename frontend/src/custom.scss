@@ -681,15 +681,26 @@ hr {
         display: inline-block;
       }
 
-      span:first-of-type {
-        @include lg {
-          margin-right: 2rem;
-        }
-      }
+    
 
     
     }
 }
+
+.line-through-work.bottom-projects-line {
+  right: 20%;
+}
+
+.line-through-work.get-in-touch-line {
+  right: 0;
+  left: 0;
+}
+
+.get-in-touch-text {
+  width: 60%;
+}
+
+
 
 // Footer
 
@@ -708,10 +719,18 @@ hr {
 
   .follow-container {
     margin-bottom: 4rem;
+
+    @include lg {
+      width: 30%;
+    }
   }
 
   .social-icons {
     margin-bottom: 6rem;
+    
+    @include lg {
+      width: 30%;
+    }
   }
 
 }

@@ -102,8 +102,10 @@ const DesktopFeaturedProjects = () => {
                 </Container>
                 <Container className="view-projects-selector d-flex align-items-center justify-content-between" fluid>
                     <p className="view-project d-flex align-items-center justify-content-center">
-                        <span className="view-all-text">VIEW ALL</span>
-                        <span className="projects-text">PROJECTS</span> 
+                        <p className="view-project">
+                            VIEW ALL PROJECTS
+                            <span className="line-through-work bottom-projects-line"></span>
+                        </p>
                     </p>
                     <img src={ArrowMobile} alt="View Project"></img>
                 </Container>
