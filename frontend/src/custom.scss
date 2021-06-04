@@ -747,4 +747,42 @@ hr {
 
 
 
+.button-container {
+  a {
+    text-decoration: none;
+    width: 80%;
+    font-family: 'inter', sans-serif;
 
+    button {
+      font-family: 'inter', sans-serif;
+      width: 100%;
+      height: 3rem;
+      outline: 0;
+      border: none;
+      margin: 1rem auto;
+      font-weight: 800;
+    }
+  }
+}
+
+.visit-site-button,
+.visit-site-button:hover,
+.visit-site-button:active {
+  background-color: #cb8423 !important;
+}
+
+.visit-code-button,
+.visit-code-button:hover,
+.visit-code-button:active {
+  background-color: #0b9d96 !important;
+}
+
+
+.project-page-project-title {
+  margin-bottom: 2rem;
+}
+
+.project-image-main, .project-image-bottom, .mars-rover-photo {
+  width: 100%;
+  margin: 3rem auto;
+}

@@ -1,6 +1,10 @@
 import React, {Fragment} from 'react'
 import {Container, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
+import ConcertBuilderFeature from '../assets/concertBuilderFeature.png'
+import ConcertBuilderPage from '../assets/concert-builder-new.png'
+import OrchesNationHome from '../assets/orchesNationHomeFeature.png'
+
 
 const ConcertBuilder = () => {
     return (
@@ -8,7 +12,7 @@ const ConcertBuilder = () => {
         <Container className="project-top-container" fluid>
             <div className="inner">
                 <div className="text-container">
-                    <h1>Concert Builder</h1>
+                    <h1 className="project-page-project-title">Concert Builder</h1>
                     <p>Full-stack application designed to assist orchestra conductors to research, develop, and plan concerts.</p>
                     <p>Built with Vanilla Javascript, CSS, and HTML. Flask backend with REST API's.</p>
                 </div>
@@ -29,13 +33,13 @@ const ConcertBuilder = () => {
         </Container>
         <Container className="project-middle-container" fluid>
             <div className="inner-middle">
-                <img src="#" alt="Mars Rover Home" className="project-image-main concert-builder-image-main" />
+                <img src={ConcertBuilderFeature} alt="Mars Rover Home" className="project-image-main concert-builder-image-main" />
                 <div className="image-spacer concertbuilder-image-spacer"></div>
                 <h2 className="Key Feature">Key Features</h2>
                 <p className="feature">Vanilla Javascript</p>
                 <p className="feature">CSS, HTML</p>
                 <p className="feature">Flask</p>
-                <img src="#" alt="Mars Rover Favorites" className="project-image-bottom concert-builder-image-bottom" />
+                <img src={ConcertBuilderPage} alt="Mars Rover Favorites" className="project-image-bottom concert-builder-image-bottom" />
             </div>
 
 
@@ -47,7 +51,7 @@ const ConcertBuilder = () => {
                 <Link to="/projects/orchesnation">
                     <Container className="project-container">
 
-                        <img src="#" alt="OrchesNation" className="mars-rover-photo" />
+                        <img src={OrchesNationHome} alt="OrchesNation" className="mars-rover-photo" />
                     </Container>
                 </Link>
             </div>
