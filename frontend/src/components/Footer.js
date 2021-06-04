@@ -2,7 +2,7 @@ import React from 'react'
 import {Container} from 'react-bootstrap'
 import Instagram from '../assets/icon-instagram.svg'
 import Twitter from '../assets/icon-twitter.svg'
-import Twitch from '../assets/icon-twitter.svg'
+import Twitch from '../assets/icon-twitch-white.svg'
 
 const Footer = () => {
     return (

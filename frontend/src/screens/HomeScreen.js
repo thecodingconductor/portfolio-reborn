@@ -13,22 +13,10 @@ const HomeScreen = () => {
     const navContext = useContext(NavContext);
     const {navOpen} = navContext;
 
-
-    // const mainContainer = useRef(null)
-
-
-
-    // useEffect(() => {
-    //     if(navOpen) {
-    //        mainContainer.current.style.overflow = 'hidden';
-    //     } else {
-    //         document.body.style.overflow = ''
-    //     }
-    // }, [navOpen])
-
     return (
-        <Container className="main-body-container">
-            <Header />
+        
+            <>
+           
             <Container className="main-title-container" fluid>
                 <h1 className="main-title">Front-end developer, 
                 <span className="text-line-conductor">conductor,
@@ -79,8 +67,8 @@ const HomeScreen = () => {
             <FeaturedProjects />
             <DesktopFeaturedProjects />
             <GetInTouch />
-          
-        </Container>
+          </>
+      
     )
 }
 

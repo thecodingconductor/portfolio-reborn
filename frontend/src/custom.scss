@@ -578,6 +578,7 @@ hr {
   border: none;
   margin-top: 1rem;
   transition: none !important;
+  cursor: default !important;
 
   @include lg {
     margin: auto 1rem;

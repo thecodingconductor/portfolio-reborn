@@ -1,6 +1,6 @@
 import React, {useState, useContext, useEffect} from 'react'
 import NavContext from '../context/nav/navContext'
-import {Container, Nav} from 'react-bootstrap'
+import {Container, Nav, Dropdown} from 'react-bootstrap'
 import Menu from '../assets/icon-menu.svg';
 import NavMobile from './NavMobile'
 
@@ -21,9 +21,10 @@ const Header = () => {
             <img src={Menu} className="menu-icons" alt="Mobile Menu Icon" onClick={() => openMobileHandler()}></img>
             <h4 className="desktop-title-left">Tristan Rais-Sherman</h4>
           </Container>
+          
           {navOpen && 
             <NavMobile />}
-          {/* <NavMobile /> */}
+          
           <Container className="navbar-right d-flex flex-row align-items-center">
              <p>Tristan Rais-Sherman</p>
               <Nav className="flex-row desktop-nav-wrapper justify-content-between">
@@ -38,3 +39,5 @@ const Header = () => {
 }
 
 export default Header
+
+
