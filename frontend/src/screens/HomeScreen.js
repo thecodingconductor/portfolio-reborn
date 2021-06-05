@@ -11,7 +11,12 @@ import NavContext from '../context/nav/navContext'
 const HomeScreen = (props) => {
 
     const navContext = useContext(NavContext);
-    const {navOpen} = navContext;
+    const {navOpen, expandProjects, mobileNavAction} = navContext;
+
+    useEffect(() => {
+        mobileNavAction(false)
+        // eslint-disable-next-line
+    }, [])
 
     return (
         

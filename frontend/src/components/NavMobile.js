@@ -6,6 +6,7 @@ import MobileNavFooter from '../components/MobileNavFooter'
 import NavContext from '../context/nav/navContext'
 import ProjectsExpanded from '../components/ProjectsExpanded'
 import useLockBodyScroll from '../hooks/useLockBodyScroll'
+import {useHistory} from 'react-router-dom'
 
 const NavMobile = () => {
 
@@ -23,6 +24,12 @@ const NavMobile = () => {
         projectsExpanded ? expandProjects(false) : expandProjects(true)
     }
 
+    let history = useHistory();
+
+    const returnHome = () => {
+        history.push('/')
+      }
+
     return (
         <Container className="mobile-nav-container" fluid>
             <Container className="nav-content-wrapper d-flex flex-column align-items-center">
@@ -31,7 +38,7 @@ const NavMobile = () => {
                         <img src={NavClose} alt="Close Mobile Nav" className="close-mobile-nav" onClick={() => closeMobileHandler()}></img>
                     </Container>
                     <Container className="mobile-nav-title-container">
-                        <h4 className="mobile-nav-title">Tristan Rais-Sherman</h4>
+                        <h4 className="mobile-nav-title" onClick={returnHome}>Tristan Rais-Sherman</h4>
                     </Container>
                 </Container>
                 <Container className="mobile-nav-link-container">
@@ -40,9 +47,9 @@ const NavMobile = () => {
                             {projectsExpanded && 
                                 <ProjectsExpanded />
                             }
-                        <Nav.Link className="mobile-nav-link" > Contact</Nav.Link>
-                        <Nav.Link className="mobile-nav-link">Twitch</Nav.Link>
-                        <Nav.Link className="mobile-nav-link">Conductor Site</Nav.Link>
+                        <Nav.Link className="mobile-nav-link" href="mailto: tristan.raissherman@gmail.com"> Contact</Nav.Link>
+                        <Nav.Link className="mobile-nav-link" href="https://www.twitch.tv/orchestraobsessed">Twitch</Nav.Link>
+                        <Nav.Link className="mobile-nav-link" href="https://www.tristanraissherman.com">Conductor Site</Nav.Link>
                     </Nav>
                 </Container>
                 <Container className="mobile-nav-footer">

@@ -17,6 +17,8 @@ const DesktopFeaturedProjects = (props) => {
         e.target.dataset.project === "orchesnation" && history.push('/orchesnation')
         e.target.dataset.project === "marsrover" && history.push('/marsrover')
     }
+
+    
     return (
        <Container className="desktop-featured-projects-container" fluid>
            <h1 className="featured-projects-text">
@@ -37,7 +39,7 @@ const DesktopFeaturedProjects = (props) => {
                         VIEW PROJECT
                         <span className="line-through-work"></span>
                     </p>
-                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
+                    <img src={ArrowMobile} alt="View Project" className="project-arrow" data-project="concertbuilder" onClick={onClickHandler}></img>
                 </Container>
                 <Container className="projects-tags-container d-flex flex-row justify-content-start" fluid>
                     <Button className="project-tag">Vanilla Javascript</Button>
@@ -62,7 +64,7 @@ const DesktopFeaturedProjects = (props) => {
                         VIEW PROJECT
                         <span className="line-through-work"></span>
                     </p>
-                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
+                    <img src={ArrowMobile} alt="View Project" data-project="orchesnation" className="project-arrow" onClick={onClickHandler}></img>
                 </Container>
                 <Container className="projects-tags-container d-flex flex-row justify-content-start" fluid>
                     <Button className="project-tag-hooks project-tag">React Hooks</Button>
@@ -89,7 +91,7 @@ const DesktopFeaturedProjects = (props) => {
                         VIEW PROJECT
                         <span className="line-through-work"></span>
                     </p>
-                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
+                    <img src={ArrowMobile} alt="View Project" className="project-arrow" data-project="marsrover" onClick={onClickHandler}></img>
                 </Container>
                 <Container className="projects-tags-container d-flex flex-row justify-content-start" fluid>
                 <Button className="project-tag">React Hooks</Button>

@@ -17,14 +17,14 @@ const OrchesNation = () => {
     return (
         <Fragment>
         <Container className="project-top-container" fluid>
-            <div className="inner">
+            <div className="inner d-flex align-items-center justify-content-between">
                 <div className="text-container">
                     <h1 className="project-page-project-title">OrchesNation</h1>
                     <p>Web application to assist orchestral professionals organize their contact lists, and view organizations' personnel.</p>
                     <p>Full Stack Application built with React, Node.js, Express, MongoDB, and REST API's.</p>
                 </div>
 
-                <div className="d-flex flex-column align-items-center justify-content-between button-container">
+                <div className="d-flex flex-column align-items-end justify-content-between button-container">
 
                     <a href="https://www.orchesnation.com" target="_blank">
                         <Button className="visit-site-button">Visit Site</Button>

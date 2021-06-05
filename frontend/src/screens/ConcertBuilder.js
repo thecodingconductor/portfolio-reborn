@@ -17,14 +17,14 @@ const ConcertBuilder = () => {
     return (
         <Fragment>
         <Container className="project-top-container" fluid>
-            <div className="inner">
+            <div className="inner d-flex align-items-center justify-content-between">
                 <div className="text-container">
                     <h1 className="project-page-project-title">Concert Builder</h1>
                     <p>Full-stack application designed to assist orchestra conductors to research, develop, and plan concerts.</p>
                     <p>Built with Vanilla Javascript, CSS, and HTML. Flask backend with REST API's.</p>
                 </div>
 
-                <div className="d-flex flex-column align-items-center justify-content-between button-container">
+                <div className="d-flex flex-column align-items-end justify-content-between button-container">
 
                     <a href="https://www.concertbuilder.com" target="_blank">
                         <Button className="visit-site-button">Visit Site</Button>

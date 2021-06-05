@@ -93,6 +93,10 @@ body {
 
 // Mobile Nav
 
+.mobile-title-right {
+  cursor: pointer;
+}
+
 .mobile-nav-container {
   position:absolute;
   background-color: $dark-blue;
@@ -124,6 +128,7 @@ body {
         .mobile-nav-title {
           font-size: .85rem;
           font-weight: 700;
+          cursor: pointer;
         }
     
       }
@@ -282,6 +287,19 @@ hr {
         color: $white;
         text-decoration: none;
       }
+
+      .desktop-nav-button {
+        button {
+          @include lg {
+            border: none;
+            background-color: transparent;
+            text-transform: none;
+          }
+        }
+        
+      };
+
+
     }
 
     p {
@@ -693,6 +711,23 @@ hr {
 
     
     }
+}
+
+// Project Detail Pages
+
+.inner {
+  .text-container {
+
+    @include lg {
+      width: 50%;
+    }
+  }
+
+  .button-container {
+    @include lg {
+      width: 50%;
+    }
+  }
 }
 
 .line-through-work.bottom-projects-line {

@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import NavContext from '../context/nav/navContext'
-import {Container, Nav, Dropdown} from 'react-bootstrap'
+import {Container, Nav, DropdownButton, Dropdown} from 'react-bootstrap'
 import Menu from '../assets/icon-menu.svg';
 import NavMobile from './NavMobile'
 import {useHistory} from 'react-router-dom'
@@ -27,7 +27,7 @@ const Header = (props) => {
 
     return (
       <Container fluid className="navbar-main-mobile">
-          <Container className="navbar-left">
+          <Container className="navbar-left" fluid>
             <img src={Menu} className="menu-icons" alt="Mobile Menu Icon" onClick={() => openMobileHandler()}></img>
             <h4 className="desktop-title-left" onClick={returnHome}>Tristan Rais-Sherman</h4>
           </Container>
@@ -35,10 +35,15 @@ const Header = (props) => {
           {navOpen && 
             <NavMobile />}
           
-          <Container className="navbar-right d-flex flex-row align-items-center">
-             <p>Tristan Rais-Sherman</p>
+          <Container className="navbar-right d-flex flex-row align-items-center" fluid>
+             <p className="mobile-title-right" onClick={returnHome}>Tristan Rais-Sherman</p>
               <Nav className="flex-row desktop-nav-wrapper justify-content-between">
-                <Nav.Link className="desktop-nav-link">Projects</Nav.Link>
+      
+                <DropdownButton id="dropdown-basic-button" className="desktop-nav-button" title="Projects">
+                  <Dropdown.Item href="/concertbuilder">Concert Builder</Dropdown.Item>
+                  <Dropdown.Item href="/orchesnation">OrchesNation</Dropdown.Item>
+                  <Dropdown.Item href="/marsrover">Mars Rover</Dropdown.Item>
+                </DropdownButton>
                 <Nav.Link className="desktop-nav-link" href="mailto: tristan.raissherman@gmail.com">Contact</Nav.Link>
                 <Nav.Link className="desktop-nav-link" href="https://www.twitch.tv/orchestraobsessed" target="_blank">Twitch</Nav.Link>
               </Nav>  
