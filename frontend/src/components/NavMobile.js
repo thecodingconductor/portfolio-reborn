@@ -40,7 +40,7 @@ const NavMobile = () => {
                             {projectsExpanded && 
                                 <ProjectsExpanded />
                             }
-                        <Nav.Link className="mobile-nav-link">Contact</Nav.Link>
+                        <Nav.Link className="mobile-nav-link" > Contact</Nav.Link>
                         <Nav.Link className="mobile-nav-link">Twitch</Nav.Link>
                         <Nav.Link className="mobile-nav-link">Conductor Site</Nav.Link>
                     </Nav>

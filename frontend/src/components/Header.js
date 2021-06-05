@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect} from 'react'
+import React, {useContext} from 'react'
 import NavContext from '../context/nav/navContext'
 import {Container, Nav, Dropdown} from 'react-bootstrap'
 import Menu from '../assets/icon-menu.svg';
@@ -29,8 +29,8 @@ const Header = () => {
              <p>Tristan Rais-Sherman</p>
               <Nav className="flex-row desktop-nav-wrapper justify-content-between">
                 <Nav.Link className="desktop-nav-link">Projects</Nav.Link>
-                <Nav.Link className="desktop-nav-link">Contact</Nav.Link>
-                <Nav.Link className="desktop-nav-link">Twitch</Nav.Link>
+                <Nav.Link className="desktop-nav-link" href="mailto: tristan.raissherman@gmail.com">Contact</Nav.Link>
+                <Nav.Link className="desktop-nav-link" href="https://www.twitch.tv/orchestraobsessed" target="_blank">Twitch</Nav.Link>
               </Nav>  
           </Container>
           

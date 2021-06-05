@@ -3,7 +3,9 @@ import {Container, Button} from 'react-bootstrap';
 
 const GetInTouch = () => {
     
-
+    const onClickHandler = () => {
+        window.open("mailto: tristan.raissherman@gmail.com")
+    }
     
     return (
         <Container className="get-in-touch-container d-flex flex-column align-items-center" fluid>
@@ -16,7 +18,7 @@ const GetInTouch = () => {
                 I find the process of solving problems using code to be endlessly challenging
                 and fasinating, and I am eager to continue my journey.
             </p>
-            <p className="view-project">
+            <p className="view-project" onClick={onClickHandler}>
                 GET IN TOUCH
                 <span className="line-through-work get-in-touch-line"></span>
             </p>
