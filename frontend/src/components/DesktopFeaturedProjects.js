@@ -6,7 +6,17 @@ import MarsRover from '../assets/desktopMarsRover.png'
 import ArrowMobile from '../assets/arrow-mobile.svg'
 import Can from '../assets/img-can.svg'
 
-const DesktopFeaturedProjects = () => {
+const DesktopFeaturedProjects = (props) => {
+
+    
+    const {history} = props.send
+    
+
+    const onClickHandler = (e) => {
+        e.target.dataset.project === "concertbuilder" && history.push('/concertbuilder')
+        e.target.dataset.project === "orchesnation" && history.push('/orchesnation')
+        e.target.dataset.project === "marsrover" && history.push('/marsrover')
+    }
     return (
        <Container className="desktop-featured-projects-container" fluid>
            <h1 className="featured-projects-text">
@@ -23,11 +33,11 @@ const DesktopFeaturedProjects = () => {
                    Full-stack application designed to assist orchestra conductors to research, develop, and plan concerts.
                 </p>
                 <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
-                    <p className="view-project">
+                    <p className="view-project" data-project="concertbuilder" onClick={onClickHandler}>
                         VIEW PROJECT
                         <span className="line-through-work"></span>
                     </p>
-                    <img src={ArrowMobile} alt="View Project"></img>
+                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
                 </Container>
                 <Container className="projects-tags-container d-flex flex-row justify-content-start" fluid>
                     <Button className="project-tag">Vanilla Javascript</Button>
@@ -48,11 +58,11 @@ const DesktopFeaturedProjects = () => {
                   Web application to assist orchestral professionals organize their contact lists, and view organizations' personnel. 
                 </p>
                 <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
-                    <p className="view-project">
+                    <p className="view-project" data-project="orchesnation" onClick={onClickHandler}>
                         VIEW PROJECT
                         <span className="line-through-work"></span>
                     </p>
-                    <img src={ArrowMobile} alt="View Project"></img>
+                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
                 </Container>
                 <Container className="projects-tags-container d-flex flex-row justify-content-start" fluid>
                     <Button className="project-tag-hooks project-tag">React Hooks</Button>
@@ -75,11 +85,11 @@ const DesktopFeaturedProjects = () => {
                    User can view randomly generated photos from the Mars Rovers and save favorites.
                 </p>
                 <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
-                    <p className="view-project">
+                    <p className="view-project" data-project="marsrover" onClick={onClickHandler}>
                         VIEW PROJECT
                         <span className="line-through-work"></span>
                     </p>
-                    <img src={ArrowMobile} alt="View Project"></img>
+                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
                 </Container>
                 <Container className="projects-tags-container d-flex flex-row justify-content-start" fluid>
                 <Button className="project-tag">React Hooks</Button>
@@ -107,7 +117,7 @@ const DesktopFeaturedProjects = () => {
                             <span className="line-through-work bottom-projects-line"></span>
                         </p>
                     </p>
-                    <img src={ArrowMobile} alt="View Project"></img>
+                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
                 </Container>
            </Container> 
        </Container>

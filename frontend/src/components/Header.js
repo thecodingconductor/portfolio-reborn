@@ -3,23 +3,33 @@ import NavContext from '../context/nav/navContext'
 import {Container, Nav, Dropdown} from 'react-bootstrap'
 import Menu from '../assets/icon-menu.svg';
 import NavMobile from './NavMobile'
+import {useHistory} from 'react-router-dom'
 
-const Header = () => {
+const Header = (props) => {
 
   const navContext = useContext(NavContext);
 
   const {mobileNavAction, projectsExpanded, navOpen} = navContext
+
+  let history = useHistory();
 
   const openMobileHandler = () => {
     
     navOpen ? mobileNavAction(false) : mobileNavAction(true)
   }
 
+  const returnHome = () => {
+    history.push('/')
+  }
+
+  
+  
+
     return (
       <Container fluid className="navbar-main-mobile">
           <Container className="navbar-left">
             <img src={Menu} className="menu-icons" alt="Mobile Menu Icon" onClick={() => openMobileHandler()}></img>
-            <h4 className="desktop-title-left">Tristan Rais-Sherman</h4>
+            <h4 className="desktop-title-left" onClick={returnHome}>Tristan Rais-Sherman</h4>
           </Container>
           
           {navOpen && 

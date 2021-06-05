@@ -6,7 +6,18 @@ import MarsRover from '../assets/marsRoverHome.png'
 import ArrowMobile from '../assets/arrow-mobile.svg'
 import Can from '../assets/img-can.svg'
 
-const FeaturedProjects = () => {
+const FeaturedProjects = (props) => {
+
+
+    const {history} = props.send
+    
+
+    const onClickHandler = (e) => {
+        e.target.dataset.project === "concertbuilder" && history.push('/concertbuilder')
+        e.target.dataset.project === "orchesnation" && history.push('/orchesnation')
+        e.target.dataset.project === "marsrover" && history.push('/marsrover')
+    }
+
     return (
        <Container className="featured-projects-container" fluid>
            <h1 className="featured-projects-text">
@@ -24,11 +35,11 @@ const FeaturedProjects = () => {
                </p>
                <img src={ConcertBuilder} alt="Concert Builder Home Page" className="concert-builder-image"></img>
                 <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
-                    <p className="view-project">
+                    <p className="view-project" data-project="concertbuilder" onClick={onClickHandler}>
                         VIEW PROJECT
                         <span className="line-through-work"></span>
                     </p>
-                    <img src={ArrowMobile} alt="View Project"></img>
+                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
                 </Container>
                 <Container className="projects-tags-container" fluid>
                     <Button className="project-tag">Vanilla Javascript</Button>
@@ -45,11 +56,11 @@ const FeaturedProjects = () => {
                 </p>
                 <img src={OrchesNation} alt="OrchesNation Home Page" className="orches-nation-image"></img>
                 <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
-                    <p className="view-project">
+                    <p className="view-project" data-project="orchesnation" onClick={onClickHandler}>
                         VIEW PROJECT
                         <span className="line-through-work"></span>
                     </p>
-                    <img src={ArrowMobile} alt="View Project"></img>
+                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
                 </Container>
                 <Container className="projects-tags-container" fluid>
                     <Button className="project-tag">React Hooks</Button>
@@ -67,11 +78,11 @@ const FeaturedProjects = () => {
                 </p>
                 <img src={MarsRover} alt="Mars Rover Home Page" className="mars-rover-image"></img>
                 <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
-                    <p className="view-project">
+                    <p className="view-project" data-project="marsrover" onClick={onClickHandler}>
                         VIEW PROJECT
                         <span className="line-through-work"></span>
                     </p>
-                    <img src={ArrowMobile} alt="View Project"></img>
+                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
                 </Container>
                 <Container className="projects-tags-container d-flex flex-column align-items-start" fluid>
                     <Button className="project-tag">React Hooks</Button>
@@ -88,7 +99,7 @@ const FeaturedProjects = () => {
                         <span className="view-all-text">VIEW ALL</span>
                         <span className="projects-text">PROJECTS</span> 
                     </p>
-                    <img src={ArrowMobile} alt="View Project"></img>
+                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
                 </Container>
            </Container>
        </Container>

@@ -199,12 +199,18 @@ body {
   padding-right: 2.3rem;
 }
 
+
+.project-arrow {
+  cursor: pointer;
+}
+
 .view-project {
   font-family: pt-mono,monospace;
   font-weight: 700;
   font-style: normal;
   margin-bottom: 0;
   position: relative;
+  cursor: pointer;
   
   .line-through-work, .view-all-line, .projects-line {
     height: 8px;
@@ -249,6 +255,7 @@ hr {
 
       @include lg {
         display: block;
+        cursor: pointer
       }
     }
 

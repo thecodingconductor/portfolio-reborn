@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useEffect} from 'react'
 import {Container, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import ConcertBuilderFeature from '../assets/concertBuilderFeature.png'
@@ -7,6 +7,13 @@ import OrchesNationHome from '../assets/orchesNationHomeFeature.png'
 
 
 const MarsRover = () => {
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+       
+        // eslint-disable-next-line
+    }, [])
 
     return (
         <Fragment>

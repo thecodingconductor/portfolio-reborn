@@ -8,7 +8,7 @@ import GetInTouch from '../components/GetInTouch'
 import NavContext from '../context/nav/navContext'
 
 
-const HomeScreen = () => {
+const HomeScreen = (props) => {
 
     const navContext = useContext(NavContext);
     const {navOpen} = navContext;
@@ -64,8 +64,8 @@ const HomeScreen = () => {
                     <span className="line-through-work"></span>
                 </Button>
             </Container>
-            <FeaturedProjects />
-            <DesktopFeaturedProjects />
+            <FeaturedProjects send={props}/>
+            <DesktopFeaturedProjects send={props}/>
             <GetInTouch />
           </>
       
