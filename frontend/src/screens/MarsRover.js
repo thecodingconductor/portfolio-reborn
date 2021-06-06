@@ -25,7 +25,7 @@ const MarsRover = () => {
                     <p>User can view randomly generated photos from the Mars Rovers and save favorites.</p>
                 </div>
 
-                <div className="d-flex flex-column align-items-end justify-content-between button-container">
+                <div className="d-flex flex-column justify-content-between button-container">
 
                     <a href="https://www.marsroverphotos.com" target="_blank" rel="noreferrer">
                         <Button className="visit-site-button">Visit Site</Button>

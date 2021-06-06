@@ -24,7 +24,7 @@ const OrchesNation = () => {
                     <p>Full Stack Application built with React, Node.js, Express, MongoDB, and REST API's.</p>
                 </div>
 
-                <div className="d-flex flex-column align-items-end justify-content-between button-container">
+                <div className="d-flex flex-column justify-content-between button-container">
 
                     <a href="https://www.orchesnation.com" target="_blank" rel="noreferrer">
                         <Button className="visit-site-button">Visit Site</Button>

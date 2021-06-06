@@ -107,6 +107,11 @@ body {
   width: 90%;
   z-index: 999;
 
+  @include md {
+    bottom: -5%;
+    width: 95%;
+  }
+
   .nav-content-wrapper {
     margin-top: 2rem;
     // padding: 1rem;
@@ -129,6 +134,11 @@ body {
           font-size: .85rem;
           font-weight: 700;
           cursor: pointer;
+
+          @include md {
+            text-align: right;
+            font-size: 1.5rem;
+          }
         }
     
       }
@@ -138,9 +148,20 @@ body {
     // Mobile Nav Links
 
     .mobile-nav-link-container {
+
+      @include md {
+        margin-top: auto;
+      }
       .mobile-nav-link-wrapper {
 
         margin-top: 4rem;
+
+        @include md {
+          justify-content: space-between;
+          
+        }
+
+      
 
         .projects-expanded-container {
 
@@ -153,6 +174,8 @@ body {
             font-size: 1rem;
             color: $white;
             text-decoration: none;
+
+           
           }
 
         }
@@ -165,6 +188,10 @@ body {
           font-size: 1.8rem;
           color: $white;
           text-decoration: none;
+
+          @include md {
+            margin: 4rem 0;
+          }
         }
       }
     }
@@ -182,6 +209,10 @@ body {
         .copyright-container-mobile {
           font-size: .6rem;
           padding-top: 1rem;
+
+          @include md {
+            padding-top: 2rem;
+          }
          
         }
       }
@@ -223,7 +254,7 @@ body {
     height: 8px;
     // width: 80%;
     left: 0;
-    right: 5%;
+    right: 0;
     background-color: rgba(7,111,56, 0.8);
     position: absolute;
     bottom: 10%;
@@ -271,6 +302,10 @@ hr {
   .navbar-right {
     width: 70%;
     justify-content: center;
+
+    @include md {
+      justify-content: flex-end;
+    }
 
     @include lg {
       justify-content: flex-end;
@@ -729,7 +764,17 @@ hr {
 // Project Detail Pages
 
 .inner {
+
+  flex-direction: column;
+
+  @include lg {
+    flex-direction: row;
+  }
   .text-container {
+
+    p {
+      margin-bottom: 2rem;
+    }
 
     @include lg {
       width: 50%;
@@ -737,8 +782,13 @@ hr {
   }
 
   .button-container {
+
+    width: 100%;
+    align-items: center;
+    
     @include lg {
       width: 50%;
+      align-items: end;
     }
   }
 }
@@ -748,7 +798,7 @@ hr {
 }
 
 .line-through-work.get-in-touch-line {
-  right: 0;
+  right: 2%;
   left: 0;
 }
 
@@ -820,7 +870,7 @@ hr {
 .button-container {
   a {
     text-decoration: none;
-    width: 80%;
+    width: 100%;
     font-family: 'inter', sans-serif;
 
     button {
