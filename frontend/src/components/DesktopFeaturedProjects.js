@@ -112,7 +112,7 @@ const DesktopFeaturedProjects = (props) => {
                 <Container className="can-spacer" fluid>
 
                 </Container>
-                <Container className="view-projects-selector d-flex align-items-center justify-content-between" fluid>
+                {/* <Container className="view-projects-selector d-flex align-items-center justify-content-between" fluid>
                     <div className="view-project d-flex align-items-center justify-content-center">
                         <p className="view-project">
                             VIEW ALL PROJECTS
@@ -120,7 +120,7 @@ const DesktopFeaturedProjects = (props) => {
                         </p>
                     </div>
                     <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
-                </Container>
+                </Container> */}
            </Container> 
        </Container>
     )

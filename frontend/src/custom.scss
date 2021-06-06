@@ -108,7 +108,7 @@ body {
   z-index: 999;
 
   .nav-content-wrapper {
-    margin-top: 1rem;
+    margin-top: 2rem;
     // padding: 1rem;
     height: 95%;
 
@@ -178,9 +178,11 @@ body {
 
         width: 80%;
         margin-left: 0;
+        margin-bottom: 2rem;
         .copyright-container-mobile {
           font-size: .6rem;
           padding-top: 1rem;
+         
         }
       }
     }
@@ -684,10 +686,10 @@ hr {
 
 .can-spacer {
 
-  height: 300px; 
+  height: 250px; 
 
   @include lg {
-    height: 50px;
+    height: 10px;
   }
 }
 
@@ -695,8 +697,9 @@ hr {
 .get-in-touch-container {
 
   @include lg {
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
+
     p {
       text-align: center;
       line-height: 2.3rem;
@@ -750,7 +753,7 @@ hr {
 }
 
 .get-in-touch-text {
-  width: 60%;
+  width: 100%;
 }
 
 
@@ -770,6 +773,16 @@ hr {
     width: 100%;
   }
 
+  .footer-content-container {
+
+    width: 80%;
+    flex-direction: column;
+
+    @include lg {
+      flex-direction: row;
+    }
+  }
+
   .follow-container {
     margin-bottom: 4rem;
 
@@ -779,7 +792,9 @@ hr {
   }
 
   .social-icons {
+    margin: auto;
     margin-bottom: 6rem;
+   
     
     @include lg {
       width: 30%;
@@ -789,6 +804,9 @@ hr {
 }
 
 .copyright-container {
+
+  width: 80%;
+
   p {
     font-size: .6rem;
   }

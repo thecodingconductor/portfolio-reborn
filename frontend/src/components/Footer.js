@@ -8,7 +8,7 @@ const Footer = () => {
     return (
        <Container className="footer-container d-flex flex-column align-items-center justify-content-between" fluid>
            
-           <Container className="d-flex justify-content-start" fluid>
+           <Container className="d-flex justify-content-start footer-content-container" >
                 <Container className="follow-container" fluid>
                     <h1>Follow</h1>
                 </Container>
@@ -29,7 +29,7 @@ const Footer = () => {
            </Container>
            
            
-           <Container className="copyright-container" fluid>
+           <Container className="copyright-container">
                 <p>Copyright 2021 Tristan Rais-Sherman</p>
            </Container>
        </Container>
