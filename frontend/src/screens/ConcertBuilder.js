@@ -26,10 +26,10 @@ const ConcertBuilder = () => {
 
                 <div className="d-flex flex-column align-items-end justify-content-between button-container">
 
-                    <a href="https://www.concertbuilder.com" target="_blank">
+                    <a href="https://www.concertbuilder.com" target="_blank" rel="noreferrer">
                         <Button className="visit-site-button">Visit Site</Button>
                     </a>
-                    <a href="https://github.com/thecodingconductor/concert-builder-rebuild" target="_blank">
+                    <a href="https://github.com/thecodingconductor/concert-builder-rebuild" target="_blank" rel="noreferrer">
                         <Button className="visit-code-button">Visit Code</Button>
                     </a>
 
@@ -55,8 +55,8 @@ const ConcertBuilder = () => {
             <div className="inner-bottom">
                 <h2>Next Project</h2>
                 <h4>OrchesNation</h4>
-                <Link to="/projects/orchesnation">
-                    <Container className="project-container">
+                <Link to="/orchesnation">
+                    <Container className="project-container" fluid>
 
                         <img src={OrchesNationHome} alt="OrchesNation" className="mars-rover-photo" />
                     </Container>

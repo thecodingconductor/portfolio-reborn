@@ -346,21 +346,29 @@ hr {
 .line-through-conductor {
   height: 5px;
   // width: 80%;
-  background-color: rgba(163,255,191, 0.7);
+  background-color: rgba(7,111,56, 0.7);
   position: absolute;
-  bottom: 25%;
-  left: 0;
-  right: 10%;
+  bottom: 28%;
+  left: 1%;
+  right: 8%;
+
+  @include lg {
+    height: 15px;
+  }
 }
 
 .line-through-streamer {
   height: 5px;
   // width: 80%;
-  left: 0;
-  right: 10%;
+  left: 1%;
+  right: 9%;
   background-color: rgba(164,148,255, 0.7);
   position: absolute;
-  bottom: 25%;
+  bottom: 28%;
+
+  @include lg {
+    height: 15px;
+  }
 }
 
 // Desktop Headphones and About Me
@@ -813,12 +821,14 @@ hr {
 .visit-site-button:hover,
 .visit-site-button:active {
   background-color: #cb8423 !important;
+  text-transform: none !important;
 }
 
 .visit-code-button,
 .visit-code-button:hover,
 .visit-code-button:active {
   background-color: #0b9d96 !important;
+  text-transform: none !important;
 }
 
 

@@ -1,6 +1,5 @@
-import React, {useContext} from 'react'
-import {Container, Nav} from 'react-bootstrap';
-import NavContext from '../context/nav/navContext'
+import React from 'react'
+import {Nav} from 'react-bootstrap';
 
 const ProjectsExpanded = () => {
     return (

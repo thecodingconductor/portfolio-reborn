@@ -1,6 +1,5 @@
-import React, {useEffect, useContext, useRef} from 'react'
+import React, {useEffect, useContext} from 'react'
 import {Container, Button} from 'react-bootstrap'
-import Header from '../components/Header'
 import Headphones from '../assets/img-headphones.svg'
 import FeaturedProjects from '../components/FeaturedProjects'
 import DesktopFeaturedProjects from '../components/DesktopFeaturedProjects'
@@ -11,7 +10,7 @@ import NavContext from '../context/nav/navContext'
 const HomeScreen = (props) => {
 
     const navContext = useContext(NavContext);
-    const {navOpen, expandProjects, mobileNavAction} = navContext;
+    const { mobileNavAction} = navContext;
 
     useEffect(() => {
         mobileNavAction(false)

@@ -9,7 +9,7 @@ const Header = (props) => {
 
   const navContext = useContext(NavContext);
 
-  const {mobileNavAction, projectsExpanded, navOpen} = navContext
+  const {mobileNavAction, navOpen} = navContext
 
   let history = useHistory();
 

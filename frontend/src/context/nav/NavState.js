@@ -15,7 +15,6 @@ const NavState = props => {
     // Open Mobile Nav
     const mobileNavAction = (navAction) => {
 
-        console.log(`navAction -> ${navAction}`)
 
         dispatch({
             type: NAV_OVERLAY_OPEN,
@@ -24,7 +23,7 @@ const NavState = props => {
     }
 
     const expandProjects = (projectsAction) => {
-        console.log(`projectsAction -> ${projectsAction}`)
+        
 
         dispatch({
             type: PROJECTS_EXPANDED,

@@ -1,5 +1,4 @@
 import React, {useContext} from 'react'
-import {LinkContainer, Link} from 'react-router-bootstrap'
 import {Container, Nav} from 'react-bootstrap';
 import NavClose from '../assets/icon-close.svg'
 import MobileNavFooter from '../components/MobileNavFooter'
@@ -48,8 +47,8 @@ const NavMobile = () => {
                                 <ProjectsExpanded />
                             }
                         <Nav.Link className="mobile-nav-link" href="mailto: tristan.raissherman@gmail.com"> Contact</Nav.Link>
-                        <Nav.Link className="mobile-nav-link" href="https://www.twitch.tv/orchestraobsessed">Twitch</Nav.Link>
-                        <Nav.Link className="mobile-nav-link" href="https://www.tristanraissherman.com">Conductor Site</Nav.Link>
+                        <Nav.Link className="mobile-nav-link" href="https://www.twitch.tv/orchestraobsessed" rel="noreferrer" target="_blank">Twitch</Nav.Link>
+                        <Nav.Link className="mobile-nav-link" href="https://www.tristanraissherman.com" rel="noreferrer" target="_blank">Conductor Site</Nav.Link>
                     </Nav>
                 </Container>
                 <Container className="mobile-nav-footer">

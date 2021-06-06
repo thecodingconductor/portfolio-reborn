@@ -1,4 +1,4 @@
-import React, {useState, useLayoutEffect}from 'react'
+import { useLayoutEffect}from 'react'
 
 const useLockBodyScroll = () => {
 

@@ -13,9 +13,18 @@ const Footer = () => {
                     <h1>Follow</h1>
                 </Container>
                 <Container className="social-icons d-flex align-items-center justify-content-between" fluid>
-                        <img src={Instagram} alt="Instagram Icon"></img>
-                        <img src={Twitter} alt="Twitter Icon"></img>
-                        <img src={Twitch} alt="Twitch Icon"></img>
+                        <a href="https://www.instagram.com/tristanrais" rel="noreferrer" target="_blank">
+                            <img src={Instagram} alt="Instagram Icon" className="social-icon"></img>
+                        </a>
+                        <a href="https://www.twitter.com/tristanconducts" rel="noreferrer" target="_blank">
+                            <img src={Twitter} alt="Twitter Icon" className="social-icon"></img>
+                        </a>
+                        <a href="https://www.twitch.tv/orchestraobsessed" rel="noreferrer" target="_blank">
+                            <img src={Twitch} alt="Twitch Icon" className="social-icon"></img>
+                        </a>
+                        
+                        
+                     
                 </Container>
            </Container>
            
