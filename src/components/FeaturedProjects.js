@@ -19,7 +19,7 @@ const FeaturedProjects = (props) => {
     }
 
     return (
-       <Container className="featured-projects-container" fluid>
+       <>
            <h1 className="featured-projects-text">
                Featured Projects
 
@@ -96,7 +96,7 @@ const FeaturedProjects = (props) => {
                 </Container>
                
            </Container>
-       </Container>
+       </>
     )
 }
 

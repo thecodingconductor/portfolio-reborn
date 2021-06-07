@@ -20,7 +20,7 @@ const DesktopFeaturedProjects = (props) => {
 
     
     return (
-       <Container className="desktop-featured-projects-container" fluid>
+       <>
            <h1 className="featured-projects-text">
                Featured Projects
 
@@ -114,7 +114,7 @@ const DesktopFeaturedProjects = (props) => {
                 </Container>
                 
            </Container> 
-       </Container>
+       </>
     )
 }
 
