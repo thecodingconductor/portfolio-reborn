@@ -17,9 +17,11 @@ const ConcertBuilder = () => {
     return (
         <Fragment>
         <Container className="project-top-container" fluid>
-            <div className="inner d-flex align-items-center justify-content-between">
+        <h1 className="project-page-project-title">Concert Builder</h1>
+            <div className="inner d-flex align-items-start justify-content-between">
+               
                 <div className="text-container">
-                    <h1 className="project-page-project-title">Concert Builder</h1>
+                    
                     <p>Full-stack application designed to assist orchestra conductors to research, develop, and plan concerts.</p>
                     <p>Built with Vanilla Javascript, CSS, and HTML. Flask backend with REST API's.</p>
                 </div>

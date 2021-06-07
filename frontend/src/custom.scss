@@ -90,6 +90,10 @@ body {
     overflow-x: hidden;
 }
 
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
 // Mobile Nav
 
@@ -881,6 +885,7 @@ hr {
       border: none;
       margin: 1rem auto;
       font-weight: 800;
+      margin-top: 0;
     }
   }
 }

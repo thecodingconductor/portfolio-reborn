@@ -18,9 +18,10 @@ const MarsRover = () => {
     return (
         <Fragment>
         <Container className="project-top-container" fluid>
-            <div className="inner d-flex align-items-center justify-content-between">
+            <h1 className="project-page-project-title">Mars Rover</h1>
+            <div className="inner d-flex align-items-start justify-content-between">
                 <div className="text-container">
-                    <h1 className="project-page-project-title">Mars Rover</h1>
+                    
                     <p>Front-end web application built with React and interacting with 3rd party NASA API's.</p>
                     <p>User can view randomly generated photos from the Mars Rovers and save favorites.</p>
                 </div>
@@ -44,9 +45,8 @@ const MarsRover = () => {
                 <img src={MarsRoverHome} alt="Mars Rover Home" className="project-image-main concert-builder-image-main" />
                 <div className="image-spacer concertbuilder-image-spacer"></div>
                 <h2 className="Key Feature">Key Features</h2>
-                <p className="feature">Vanilla Javascript</p>
-                <p className="feature">CSS, HTML</p>
-                <p className="feature">Flask</p>
+                <p className="feature">React Hooks</p>
+                <p className="feature">Sass, HTML</p>
                 <img src={MarsRoverFavorites} alt="Mars Rover Favorites" className="project-image-bottom concert-builder-image-bottom" />
             </div>
 
