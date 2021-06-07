@@ -153,9 +153,9 @@ body {
 
     .mobile-nav-link-container {
 
-      @include md {
-        margin-top: auto;
-      }
+      // @include md {
+      //   margin-top: auto;
+      // }
       .mobile-nav-link-wrapper {
 
         margin-top: 4rem;
@@ -194,7 +194,7 @@ body {
           text-decoration: none;
 
           @include md {
-            margin: 4rem 0;
+            margin: 2rem 0;
           }
         }
       }
@@ -887,6 +887,8 @@ hr {
       font-weight: 800;
       margin-top: 0;
     }
+
+
   }
 }
 
