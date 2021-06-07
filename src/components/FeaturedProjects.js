@@ -94,13 +94,7 @@ const FeaturedProjects = (props) => {
                 <Container fluid style={{ height: '300px'}}>
 
                 </Container>
-                {/* <Container className="view-projects-selector d-flex align-items-center justify-content-between" fluid>
-                    <p className="view-project d-flex flex-column align-items-center justify-content-center">
-                        <span className="view-all-text">VIEW ALL</span>
-                        <span className="projects-text">PROJECTS</span> 
-                    </p>
-                    <img src={ArrowMobile} alt="View Project" className="project-arrow"></img>
-                </Container> */}
+               
            </Container>
        </Container>
     )
