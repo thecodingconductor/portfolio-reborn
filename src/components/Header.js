@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react'
+import React, {useState} from 'react'
 // import NavContext from '../context/nav/navContext'
 import {Container, Nav, DropdownButton, Dropdown} from 'react-bootstrap'
 import Menu from '../assets/icon-menu.svg';

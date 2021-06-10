@@ -6,7 +6,7 @@ import NavContext from '../context/nav/navContext'
 import ProjectsExpanded from '../components/ProjectsExpanded'
 import useLockBodyScroll from '../hooks/useLockBodyScroll'
 import {useHistory} from 'react-router-dom'
-import useDelayUnmount from '../hooks/useDelayUnmount'
+// import useDelayUnmount from '../hooks/useDelayUnmount'
 
 
 const NavMobile = ({isMounted, setIsMounted}) => {
