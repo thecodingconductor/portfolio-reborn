@@ -5,12 +5,13 @@ import Menu from '../assets/icon-menu.svg';
 import NavMobile from './NavMobile'
 import {useHistory} from 'react-router-dom'
 // import {CSSTransition} from 'react-transition-group'
+import useDelayUnmount from '../hooks/useDelayUnmount'
 
 const Header = (props) => {
 
   const navContext = useContext(NavContext);
 
-  const {mobileNavAction, navOpen} = navContext
+  const {mobileNavAction, navOpen, testNavOpen} = navContext
 
   let history = useHistory();
 
@@ -19,12 +20,16 @@ const Header = (props) => {
     navOpen ? mobileNavAction(false) : mobileNavAction(true)
   }
 
+  // const testOpenMobileHandler = () => {
+  //   testNavOpen
+  // }
+
   const returnHome = () => {
     history.push('/')
   }
 
-  
-  
+
+  // const [state, show, hide] = useDelayUnmount();
 
     return (
       <Container fluid className="navbar-main-mobile">

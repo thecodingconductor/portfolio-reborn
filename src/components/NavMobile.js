@@ -6,11 +6,13 @@ import NavContext from '../context/nav/navContext'
 import ProjectsExpanded from '../components/ProjectsExpanded'
 import useLockBodyScroll from '../hooks/useLockBodyScroll'
 import {useHistory} from 'react-router-dom'
-// import {CSSTransition} from 'react-transition-group'
+// import useDelayUnmount from '../hooks/useDelayUnmount'
+
 
 const NavMobile = () => {
 
     useLockBodyScroll();
+
 
     const navContext = useContext(NavContext)
 
@@ -30,6 +32,8 @@ const NavMobile = () => {
         history.push('/')
       }
 
+    // const [testNavOpen, show, hide] = useDelayUnmount()
+ 
 
     // const [showButton, setShowButton] = useState(true);
     // const [showMessage, setShowMessage] = useState(false)
