@@ -74,7 +74,7 @@ const FeaturedProjects = (props) => {
            <Container className="mars-rover-container" fluid>
                 <h4>Mars Rover</h4>
                 <p>
-                   User can view randomly generated photos from the Mars Rovers and save favorites.
+                    Front-end application for viewing random images from the Mars Rovers.
                 </p>
                 <img src={MarsRover} alt="Mars Rover Home Page" className="mars-rover-image"></img>
                 <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
