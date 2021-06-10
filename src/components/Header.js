@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState} from 'react'
 import NavContext from '../context/nav/navContext'
 import {Container, Nav, DropdownButton, Dropdown} from 'react-bootstrap'
 import Menu from '../assets/icon-menu.svg';
@@ -9,16 +9,25 @@ import useDelayUnmount from '../hooks/useDelayUnmount'
 
 const Header = (props) => {
 
-  const navContext = useContext(NavContext);
+  // const navContext = useContext(NavContext);
+  // const {mobileNavAction, navOpen, testNavOpen} = navContext
 
-  const {mobileNavAction, navOpen, testNavOpen} = navContext
+  // const [navOpen, setNavOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+  const showDiv = useDelayUnmount(isMounted, 250);
 
   let history = useHistory();
 
-  const openMobileHandler = () => {
-    
-    navOpen ? mobileNavAction(false) : mobileNavAction(true)
+  const mountedStyle = {animation: "inAnimation 250ms ease-in"}
+  const unmountedStyle = {
+    animation: "outAnimation 270ms ease-out",
+    animationFillMode: "forwards"
   }
+
+  // const openMobileHandler = () => {
+    
+  //   navOpen ? mobileNavAction(false) : mobileNavAction(true)
+  // }
 
   // const testOpenMobileHandler = () => {
   //   testNavOpen
@@ -29,17 +38,20 @@ const Header = (props) => {
   }
 
 
+
+
+
   // const [state, show, hide] = useDelayUnmount();
 
     return (
       <Container fluid className="navbar-main-mobile">
           <Container className="navbar-left" fluid>
-            <img src={Menu} className="menu-icons" alt="Mobile Menu Icon" onClick={() => openMobileHandler()}></img>
+            <img src={Menu} className="menu-icons" alt="Mobile Menu Icon" onClick={() => setIsMounted(!isMounted, 250)}></img>
             <h4 className="desktop-title-left" onClick={returnHome}>Tristan Rais-Sherman</h4>
           </Container>
           
-          {navOpen && 
-            <NavMobile />}
+          {showDiv && 
+            <NavMobile  isMounted={isMounted} setIsMounted={setIsMounted}/>}
           
           <Container className="navbar-right d-flex flex-row align-items-center" fluid>
              <p className="mobile-title-right" onClick={returnHome}>Tristan Rais-Sherman</p>

@@ -6,10 +6,10 @@ import NavContext from '../context/nav/navContext'
 import ProjectsExpanded from '../components/ProjectsExpanded'
 import useLockBodyScroll from '../hooks/useLockBodyScroll'
 import {useHistory} from 'react-router-dom'
-// import useDelayUnmount from '../hooks/useDelayUnmount'
+import useDelayUnmount from '../hooks/useDelayUnmount'
 
 
-const NavMobile = () => {
+const NavMobile = ({isMounted, setIsMounted}) => {
 
     useLockBodyScroll();
 
@@ -32,7 +32,7 @@ const NavMobile = () => {
         history.push('/')
       }
 
-    // const [testNavOpen, show, hide] = useDelayUnmount()
+    const showDiv = useDelayUnmount(isMounted, 250)
  
 
     // const [showButton, setShowButton] = useState(true);
@@ -51,11 +51,11 @@ const NavMobile = () => {
 
        
 
-        <Container className="mobile-nav-container" fluid style={navOpen ? mountedStyle: unMountedStyle}>
+        <Container className="mobile-nav-container" fluid style={isMounted ? mountedStyle: unMountedStyle}>
             <Container className="nav-content-wrapper d-flex flex-column align-items-center">
                 <Container className="header-nav-overlay d-flex align-items-center justify-content-between" fluid>
                     <Container className="mobile-close-container">
-                        <img src={NavClose} alt="Close Mobile Nav" className="close-mobile-nav" onClick={() => closeMobileHandler()}></img>
+                        <img src={NavClose} alt="Close Mobile Nav" className="close-mobile-nav" onClick={() => setIsMounted(!isMounted)}></img>
                     </Container>
                     <Container className="mobile-nav-title-container">
                         <h4 className="mobile-nav-title" onClick={returnHome}>Tristan Rais-Sherman</h4>

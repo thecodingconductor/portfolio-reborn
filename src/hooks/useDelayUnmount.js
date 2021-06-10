@@ -1,51 +1,20 @@
-import React, {useEffect, useState, useContext} from 'react'
-import NavContext from '../context/nav/navContext'
+import React, {useState, useEffect} from 'react'
 
+const useDelayUnmount = (isMounted, delayTime) => {
 
-
-const useDelayUnmount = (time=1600) => {
-
-    const navContext = useContext(NavContext);
-    const {testNavOpen, testMobileNavAction} = navContext;
-
-    // const [state, setState] = setState('unmounted');
-
-    const show = () => {
-        if(testNavOpen === "unmounting") {
-            return
-        }
-
-        testMobileNavAction("mounting")
-    }
-
-    const hide = () => {
-        if(testNavOpen === "mounting") {
-            return
-        }
-
-        testMobileNavAction("unmounting")
-    }
-
-
-
+    const [showDiv, setShowDiv] = useState(false)
     useEffect(() => {
         let timeoutId;
-
-
-        if(testNavOpen === "unmounting") {
-            timeoutId = setTimeout(() => {
-                testMobileNavAction("unmounted")
-            }, time)
-        } else if (testNavOpen === "mounting"){
-            
-            timeoutId = setTimeout(() =>  testMobileNavAction("mounted"), time)
+        if(isMounted && !showDiv) {
+          setShowDiv(true);
+        } else if (!isMounted && showDiv) {
+          timeoutId = setTimeout(() => setShowDiv(false), delayTime);
         }
-
+    
         return () => clearTimeout(timeoutId)
-        
-    }, [testNavOpen, time])
-
-    return [testNavOpen, show, hide]
+      }, [isMounted, delayTime, showDiv]);
+    
+      return showDiv;
 }
 
 export default useDelayUnmount
