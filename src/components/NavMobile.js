@@ -16,11 +16,11 @@ const NavMobile = ({isMounted, setIsMounted}) => {
 
     const navContext = useContext(NavContext)
 
-    const {mobileNavAction, expandProjects, projectsExpanded, navOpen} = navContext
+    const {expandProjects, projectsExpanded} = navContext
 
-    const closeMobileHandler = () => {
-        navOpen ? mobileNavAction(false) : mobileNavAction(true)
-    }
+    // const closeMobileHandler = () => {
+    //     navOpen ? mobileNavAction(false) : mobileNavAction(true)
+    // }
 
     const projectsHandler = () => {
         projectsExpanded ? expandProjects(false) : expandProjects(true)
@@ -32,7 +32,7 @@ const NavMobile = ({isMounted, setIsMounted}) => {
         history.push('/')
       }
 
-    const showDiv = useDelayUnmount(isMounted, 250)
+    // const showDiv = useDelayUnmount(isMounted, 250)
  
 
     // const [showButton, setShowButton] = useState(true);

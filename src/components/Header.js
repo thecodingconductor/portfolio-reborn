@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react'
-import NavContext from '../context/nav/navContext'
+// import NavContext from '../context/nav/navContext'
 import {Container, Nav, DropdownButton, Dropdown} from 'react-bootstrap'
 import Menu from '../assets/icon-menu.svg';
 import NavMobile from './NavMobile'
@@ -18,11 +18,11 @@ const Header = (props) => {
 
   let history = useHistory();
 
-  const mountedStyle = {animation: "inAnimation 250ms ease-in"}
-  const unmountedStyle = {
-    animation: "outAnimation 270ms ease-out",
-    animationFillMode: "forwards"
-  }
+  // const mountedStyle = {animation: "inAnimation 250ms ease-in"}
+  // const unmountedStyle = {
+  //   animation: "outAnimation 270ms ease-out",
+  //   animationFillMode: "forwards"
+  // }
 
   // const openMobileHandler = () => {
     
