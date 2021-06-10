@@ -12,7 +12,7 @@ const NavState = props => {
 
     const [state, dispatch] = useReducer(navReducer, initialState)
 
-    // Open Mobile Nav
+    // Open/Close Mobile Nav
     const mobileNavAction = (navAction) => {
 
 
@@ -22,6 +22,7 @@ const NavState = props => {
         })
     }
 
+    // Open/Close Projects expand
     const expandProjects = (projectsAction) => {
         
 

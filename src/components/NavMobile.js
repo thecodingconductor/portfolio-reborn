@@ -47,12 +47,7 @@ const NavMobile = () => {
 
        
 
-        <Container className="mobile-nav-container" fluid style={navOpen ? mountedStyle: unMountedStyle}
-            onAnimationEnd={() => {
-                if(!navOpen) {
-                    mobileNavAction(false)
-                }
-            }}>
+        <Container className="mobile-nav-container" fluid style={navOpen ? mountedStyle: unMountedStyle}>
             <Container className="nav-content-wrapper d-flex flex-column align-items-center">
                 <Container className="header-nav-overlay d-flex align-items-center justify-content-between" fluid>
                     <Container className="mobile-close-container">
