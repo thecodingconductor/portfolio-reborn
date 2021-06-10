@@ -4,6 +4,7 @@ import {Container, Nav, DropdownButton, Dropdown} from 'react-bootstrap'
 import Menu from '../assets/icon-menu.svg';
 import NavMobile from './NavMobile'
 import {useHistory} from 'react-router-dom'
+import {CSSTransition} from 'react-transition-group'
 
 const Header = (props) => {
 

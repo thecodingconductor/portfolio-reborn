@@ -1,11 +1,12 @@
-import React, {useContext} from 'react'
-import {Container, Nav} from 'react-bootstrap';
+import React, {useContext, useState} from 'react'
+import {Container, Nav, Button, Alert} from 'react-bootstrap';
 import NavClose from '../assets/icon-close.svg'
 import MobileNavFooter from '../components/MobileNavFooter'
 import NavContext from '../context/nav/navContext'
 import ProjectsExpanded from '../components/ProjectsExpanded'
 import useLockBodyScroll from '../hooks/useLockBodyScroll'
 import {useHistory} from 'react-router-dom'
+import {CSSTransition} from 'react-transition-group'
 
 const NavMobile = () => {
 
@@ -29,8 +30,29 @@ const NavMobile = () => {
         history.push('/')
       }
 
+
+    const [showButton, setShowButton] = useState(true);
+    const [showMessage, setShowMessage] = useState(false)
+
+
+
+    const mountedStyle = { animation: "inAnimation 500ms ease-in"}
+    const unMountedStyle = {
+        animation: "outAnimation 500ms ease-out",
+        animationFillMode: "forwards"
+    }
+
+
     return (
-        <Container className="mobile-nav-container" fluid>
+
+       
+
+        <Container className="mobile-nav-container" fluid style={navOpen ? mountedStyle: unMountedStyle}
+            onAnimationEnd={() => {
+                if(!navOpen) {
+                    mobileNavAction(false)
+                }
+            }}>
             <Container className="nav-content-wrapper d-flex flex-column align-items-center">
                 <Container className="header-nav-overlay d-flex align-items-center justify-content-between" fluid>
                     <Container className="mobile-close-container">
@@ -55,9 +77,10 @@ const NavMobile = () => {
                     <MobileNavFooter />
                 </Container>
             </Container>
-                
-        
         </Container>
+           
+        
+        
     )
 }
 

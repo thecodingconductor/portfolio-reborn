@@ -23,7 +23,7 @@ const ConcertBuilder = () => {
                 <div className="text-container">
                     
                     <p>Full-stack application designed to assist orchestra conductors to research, develop, and plan concerts.</p>
-                    <p>Built with Vanilla Javascript, CSS, and HTML. Flask backend with REST API's.</p>
+                    <p>Built entirely without frameworks. Vanilla Javascript, CSS, and HTML. Flask backend with REST API's.</p>
                 </div>
 
                 <div className="d-flex flex-column justify-content-between button-container">
