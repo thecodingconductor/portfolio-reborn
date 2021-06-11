@@ -961,3 +961,27 @@ hr {
     visibility: visible
   }
 }
+
+@keyframes projectsExpand {
+  0% {
+    opacity: 0;
+    justify-content: flex-start
+  }
+
+  100% {
+    opacity: 1;
+    justify-content: space-between
+  }
+}
+
+@keyframes projectsCollapse {
+  0% {
+    opacity: 1;
+    justify-content: space-between;
+  }
+
+  100% {
+    opacity: 0;
+    justify-content: flex-start
+  }
+}

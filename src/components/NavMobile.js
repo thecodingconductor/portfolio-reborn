@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState} from 'react'
 import {Container, Nav} from 'react-bootstrap';
 import NavClose from '../assets/icon-close.svg'
 import MobileNavFooter from '../components/MobileNavFooter'
@@ -6,7 +6,7 @@ import NavContext from '../context/nav/navContext'
 import ProjectsExpanded from '../components/ProjectsExpanded'
 import useLockBodyScroll from '../hooks/useLockBodyScroll'
 import {useHistory} from 'react-router-dom'
-// import useDelayUnmount from '../hooks/useDelayUnmount'
+import useDelayUnmount from '../hooks/useDelayUnmount'
 
 
 const NavMobile = ({isMounted, setIsMounted}) => {
@@ -18,13 +18,10 @@ const NavMobile = ({isMounted, setIsMounted}) => {
 
     const {expandProjects, projectsExpanded} = navContext
 
-    // const closeMobileHandler = () => {
-    //     navOpen ? mobileNavAction(false) : mobileNavAction(true)
+ 
+    // const projectsHandler = () => {
+    //     projectsExpanded ? expandProjects(false) : expandProjects(true)
     // }
-
-    const projectsHandler = () => {
-        projectsExpanded ? expandProjects(false) : expandProjects(true)
-    }
 
     let history = useHistory();
 
@@ -32,19 +29,15 @@ const NavMobile = ({isMounted, setIsMounted}) => {
         history.push('/')
       }
 
-    // const showDiv = useDelayUnmount(isMounted, 250)
- 
-
-    // const [showButton, setShowButton] = useState(true);
-    // const [showMessage, setShowMessage] = useState(false)
-
-
 
     const mountedStyle = { animation: "inAnimation 500ms ease-in"}
     const unMountedStyle = {
         animation: "outAnimation 500ms ease-out",
         animationFillMode: "forwards"
     }
+
+    const [isProjectsMounted, setIsProjectsMounted] = useState(false);
+    const showDiv = useDelayUnmount(isProjectsMounted, 250);
 
 
     return (
@@ -63,9 +56,9 @@ const NavMobile = ({isMounted, setIsMounted}) => {
                 </Container>
                 <Container className="mobile-nav-link-container">
                     <Nav className="flex-column mobile-nav-link-wrapper">
-                        <Nav.Link className="mobile-nav-link" onClick={() => projectsHandler()}>Projects</Nav.Link>
-                            {projectsExpanded && 
-                                <ProjectsExpanded />
+                        <Nav.Link className="mobile-nav-link" onClick={() => setIsProjectsMounted(!isProjectsMounted)}>Projects</Nav.Link>
+                            {showDiv && 
+                                <ProjectsExpanded isProjectsMounted={isProjectsMounted} setIsProjectsMounted={setIsProjectsMounted}/>
                             }
                         <Nav.Link className="mobile-nav-link" href="mailto: tristan.raissherman@gmail.com"> Contact</Nav.Link>
                         <Nav.Link className="mobile-nav-link" href="https://www.twitch.tv/orchestraobsessed" rel="noreferrer" target="_blank">Twitch</Nav.Link>

@@ -46,7 +46,7 @@ const Header = (props) => {
     return (
       <Container fluid className="navbar-main-mobile">
           <Container className="navbar-left" fluid>
-            <img src={Menu} className="menu-icons" alt="Mobile Menu Icon" onClick={() => setIsMounted(!isMounted, 250)}></img>
+            <img src={Menu} className="menu-icons" alt="Mobile Menu Icon" onClick={() => setIsMounted(!isMounted)}></img>
             <h4 className="desktop-title-left" onClick={returnHome}>Tristan Rais-Sherman</h4>
           </Container>
           

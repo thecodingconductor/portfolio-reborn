@@ -1,9 +1,20 @@
-import React from 'react'
+import React, {} from 'react'
 import {Nav} from 'react-bootstrap';
 
-const ProjectsExpanded = () => {
+const ProjectsExpanded = ({isProjectsMounted, setIsProjectsMounted}) => {
+
+    const collapsedStyles = {
+        animation: "projectsExpand 700ms ease-in"
+    };
+
+    const expandedStyles = {
+        animation: "projectsCollapse 730ms ease-out"
+        // animationFillMode: "forwards"
+    }
+
+
     return (
-        <Nav className="flex-column projects-expanded-container">
+        <Nav className="flex-column projects-expanded-container" style={isProjectsMounted ? expandedStyles: collapsedStyles}>
             <Nav.Link className="projects-nav-link" href="/concertbuilder">Concert Builder</Nav.Link>
             <Nav.Link className="projects-nav-link" href="/orchesnation">OrchesNation</Nav.Link>
             <Nav.Link className="projects-nav-link" href="/marsrover">Mars Rover</Nav.Link>
