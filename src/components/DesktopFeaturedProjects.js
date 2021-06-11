@@ -35,7 +35,7 @@ const DesktopFeaturedProjects = (props) => {
                 <p>
                    Full-stack application designed to assist orchestra conductors to research, develop, and plan concerts.
                 </p>
-                <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
+                <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-start">
                     <p className="view-project" data-project="concertbuilder" onClick={onClickHandler}>
                         VIEW PROJECT
                         <span className="line-through-work"></span>
@@ -60,7 +60,7 @@ const DesktopFeaturedProjects = (props) => {
               <p>
                   Web application to assist orchestral professionals organize their contact lists, and view organizations' personnel. 
                 </p>
-                <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
+                <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-start">
                     <p className="view-project" data-project="orchesnation" onClick={onClickHandler}>
                         VIEW PROJECT
                         <span className="line-through-work"></span>
@@ -87,7 +87,7 @@ const DesktopFeaturedProjects = (props) => {
                 <p>
                     Front-end application for viewing random images from the Mars Rovers.
                 </p>
-                <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-between">
+                <Container fluid className="view-project-button d-flex flex-row align-items-center justify-content-start">
                     <p className="view-project" data-project="marsrover" onClick={onClickHandler}>
                         VIEW PROJECT
                         <span className="line-through-work"></span>
