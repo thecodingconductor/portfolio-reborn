@@ -1,8 +1,8 @@
-import React, {useContext, useState} from 'react'
+import React, {useState} from 'react'
 import {Container, Nav} from 'react-bootstrap';
 import NavClose from '../assets/icon-close.svg'
 import MobileNavFooter from '../components/MobileNavFooter'
-import NavContext from '../context/nav/navContext'
+// import NavContext from '../context/nav/navContext'
 import ProjectsExpanded from '../components/ProjectsExpanded'
 import useLockBodyScroll from '../hooks/useLockBodyScroll'
 import {useHistory} from 'react-router-dom'
@@ -14,9 +14,9 @@ const NavMobile = ({isMounted, setIsMounted}) => {
     useLockBodyScroll();
 
 
-    const navContext = useContext(NavContext)
+    // const navContext = useContext(NavContext)
 
-    const {expandProjects, projectsExpanded} = navContext
+    // const {expandProjects, projectsExpanded} = navContext
 
  
     // const projectsHandler = () => {
