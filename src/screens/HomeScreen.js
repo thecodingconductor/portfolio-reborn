@@ -1,10 +1,11 @@
-import React, {useEffect, useContext, useRef} from 'react'
+import React, {useEffect, useContext, useRef, useState} from 'react'
 import {Container, Button} from 'react-bootstrap'
 import Headphones from '../assets/img-headphones.svg'
 import FeaturedProjects from '../components/FeaturedProjects'
 import DesktopFeaturedProjects from '../components/DesktopFeaturedProjects'
 import GetInTouch from '../components/GetInTouch'
 import NavContext from '../context/nav/navContext'
+import useInterval from '../hooks/useInterval'
 
 
 const HomeScreen = (props) => {
@@ -20,6 +21,17 @@ const HomeScreen = (props) => {
     const featuredProjects = useRef(null)
     const desktopFeaturedProjects = useRef(null)
     const desktopHeadphones = useRef(null)
+
+
+    const [changeShake, setChangeShake] = useState('shake-little')
+
+   useInterval(() => {
+       if(changeShake === 'shake-little') {
+            setChangeShake('shake-hard')
+       } else {
+           setChangeShake('shake-little')
+       }
+   }, 500)
     
 
 
@@ -54,7 +66,7 @@ const HomeScreen = (props) => {
             
             <Container className="desktop-about-me-headphones-container" ref={desktopHeadphones}>
                 <Container className="desktop-headphones-container">
-                    <img src={Headphones} alt="Headphones" className="headphones-image"></img>
+                    <img src={Headphones} alt="Headphones" className={`headphones-image ${changeShake}`}></img>
                 </Container>
                 <Container className="desktop-about-me-container">
                     <p className="about-me-text">
@@ -70,7 +82,7 @@ const HomeScreen = (props) => {
                 </Container>
             </Container>
 
-            <Container className="headphones-container">
+            <Container className="headphones-container shake-little">
                 <img src={Headphones} alt="Headphones" className="headphones-image"></img>
             </Container>
             <Container className="headphone-spacer">
