@@ -1024,3 +1024,81 @@ hr {
     justify-content: flex-start
   }
 }
+
+// Bubbles
+#bubbles {
+  position: absolute;
+  top: 15%;
+  bottom: 35%;
+  left: 0;
+  right: 50%;
+  // background-color:rgba(7,111,56, 0.7)
+}
+
+.bubble {
+  width: 25px;
+  height: 25px;
+  background: #000;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 75%;
+  z-index: 9999
+}
+
+.x1 {
+ 
+  transform: scale(0.9);
+  opacity: 0.2;
+  animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+ 
+}
+
+.x2 {
+  left: 20px;
+ 
+  transform: scale(0.6);
+  opacity: 0.5;
+  animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+ 
+}
+.x3 {
+  left: 35px;
+ 
+  transform: scale(0.8);
+  opacity: 0.3;
+  animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+ 
+}
+.x4 {
+  left: 47px;
+  
+  transform: scale(0.75);
+  opacity: 0.35;
+  animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+.x5 {
+  left: 15px;
+ 
+  transform: scale(0.8);
+  opacity: 0.3; 
+  animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+  
+}
+
+@keyframes moveclouds { 
+  0% { 
+      top: 50px;
+  }
+  100% { 
+      top: -100px;
+  }
+}
+
+@keyframes sideWays { 
+  0% { 
+      margin-left:0px;
+  }
+  100% { 
+      margin-left:50px;
+  }
+}
