@@ -5,6 +5,7 @@ import OrchesNation from '../assets/desktopOrchesNation.png'
 import MarsRover from '../assets/desktopMarsRover.png'
 import ArrowMobile from '../assets/arrow-mobile.svg'
 import Can from '../assets/img-can.svg'
+import Bubbles from '../components/Bubbles'
 
 const DesktopFeaturedProjects = (props) => {
 
@@ -108,6 +109,7 @@ const DesktopFeaturedProjects = (props) => {
 
           
            <Container className="view-all-projects-container" fluid>
+                <Bubbles />
                 <img src={Can} alt="Can" className="can-image"></img>
                 <Container className="can-spacer" fluid>
 

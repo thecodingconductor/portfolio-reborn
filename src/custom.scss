@@ -1033,6 +1033,12 @@ hr {
   left: 0;
   right: 50%;
   // background-color:rgba(7,111,56, 0.7)
+
+  @include lg {
+    left: -20%;
+    bottom: unset;
+    
+  }
 }
 
 .bubble {
