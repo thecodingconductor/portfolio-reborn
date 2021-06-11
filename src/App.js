@@ -8,6 +8,7 @@ import OrchesNation from './screens/OrchesNation'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import NavState from './context/nav/NavState'
+import BackgroundGrid from './components/BackgroundGrid'
 
 
 function App() {
@@ -17,12 +18,12 @@ function App() {
         <Router>
           <Container className="global-container" fluid>
             <Container className="main-body-container">
+              <BackgroundGrid />
               <Header />
               <Route exact path='/' component={HomeScreen}></Route>
               <Route exact path='/concertbuilder' component={ConcertBuilder}></Route>
               <Route exact path='/orchesnation' component={OrchesNation}></Route>
               <Route exact path='/marsrover' component={MarsRover}></Route>
-             
             </Container>
             <Footer />
           </Container>

@@ -239,7 +239,46 @@ body {
 .main-body-container {
   padding-left: 2.3rem;
   padding-right: 2.3rem;
+  position: relative;
 }
+
+.grid-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -99;
+
+  .row {
+    height: 100%;
+    .col {
+      height: 100%;
+      // border: 1px solid $gray;
+    }
+  }
+}
+
+.grid-container::before, .col::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 1px;
+  height: 100%;
+  background-color: $gray;
+}
+
+.grid-container::after, .col::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -15px;
+  width: 1px;
+  height: 100%;
+  background-color: $gray;
+}
+
 
 
 .project-arrow {
