@@ -13,16 +13,6 @@ const NavMobile = ({isMounted, setIsMounted}) => {
 
     useLockBodyScroll();
 
-
-    // const navContext = useContext(NavContext)
-
-    // const {expandProjects, projectsExpanded} = navContext
-
- 
-    // const projectsHandler = () => {
-    //     projectsExpanded ? expandProjects(false) : expandProjects(true)
-    // }
-
     let history = useHistory();
 
     const returnHome = () => {

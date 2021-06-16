@@ -8,7 +8,7 @@ const ProjectsExpanded = ({isProjectsMounted, setIsProjectsMounted}) => {
     };
 
     const expandedStyles = {
-        animation: "projectsCollapse 730ms ease-out"
+        animation: "projectsCollapse 700ms ease-out"
         // animationFillMode: "forwards"
     }
 
