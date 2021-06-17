@@ -1046,13 +1046,18 @@ display: none;
   @include lg {
     margin: auto;
     margin-top: 4rem;
-    width: 50%;
+    width: 80%;
     
   }
 
     p {
       text-align: center;
       line-height: 2.3rem;
+
+      @include lg {
+        font-size: 1.75rem;
+        line-height: 2.75rem;
+      }
     }
 
     p:first-of-type {
