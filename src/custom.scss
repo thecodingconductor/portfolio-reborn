@@ -61,6 +61,7 @@ $forest-green: #076F38;
 $dark-blue: #112F4D;
 $gray: #00000029;
 $off-white: #FFFFFF19;
+$grid-lines: #76FFF408;
 
 * {
   margin: 0;
@@ -244,6 +245,8 @@ body {
 
 .grid-container {
   position: absolute;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
   top: 0;
   bottom: 0;
   left: 0;
@@ -259,25 +262,50 @@ body {
   }
 }
 
-.grid-container::before, .col::before {
+ .col::after {
   content: '';
   position: absolute;
   top: 0;
-  left: -15px;
-  width: 1px;
+  width: 3px;
   height: 100%;
-  background-color: $gray;
+  background-color: $grid-lines;
 }
 
-.grid-container::after, .col::after {
+.col:last-of-type::before {
   content: '';
   position: absolute;
   top: 0;
-  right: -15px;
-  width: 1px;
+  right: 0;
+  width: 3px;
   height: 100%;
-  background-color: $gray;
+  background-color: $grid-lines;
 }
+
+.grid-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right:7px;
+  width: 3px;
+  height: 100%;
+  background-color: $grid-lines;
+
+}
+
+.grid-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 3px;
+  height: 100%;
+  background-color: $grid-lines;
+
+}
+
+
+
+
 
 
 
@@ -414,6 +442,10 @@ hr {
 
   // Title Text
 
+  @include lg {
+    margin-top: 4rem;
+  }
+
   .main-title{
     font-family: 'inter', sans-serif;
     font-weight: bold;
@@ -437,7 +469,7 @@ hr {
 .line-through-conductor {
   height: 5px;
   // width: 80%;
-  background-color: rgba(7,111,56, 0.7);
+  background-color: #00FF4E5C;
   position: absolute;
   bottom: 20%;
   left: 1%;
@@ -453,7 +485,7 @@ hr {
   // width: 80%;
   left: 1%;
   right: 9%;
-  background-color: rgba(164,148,255, 0.7);
+  background-color: #2700FF6B;
   position: absolute;
   bottom: 20%;
 
@@ -465,60 +497,97 @@ hr {
 // Desktop Headphones and About Me
 .desktop-about-me-headphones-container {
   display: none;
+
   
   @include lg{
     display: flex;
     align-items: center;
     justify-content: between;
-    margin-bottom: 6rem;
+    margin: 4rem auto;
+    height: 36rem;
+    // position: relative;
   }
 
-  .desktop-about-me-container {
-    display: none;
-
+  .desktop-images-container {
     @include lg {
-      display: flex;
-      flex-direction: column;
-      // align-items: center;
-      justify-content: flex-start
-
-
-
+      position: relative;
     }
 
-    .desktop-view-work-container {
+    // .desktop-headphones-container {
 
-      @include lg {
-        margin-top: 2rem;
-        padding-left: 0;
-      }
-      .view-work-button {
+    //   @include lg {
+    //     position: absolute;
+    //     top: 0;
+    //     left: -800px;
+    //     bottom: 1000px
+    //   }
+
+      .desktop-headphones-image {
         @include lg {
-
-          background-color: transparent;
-          border: none;
-          padding: 0;
-          font-size: 1.4rem;
-          letter-spacing: .3rem;
-          position: relative;
-
-        .line-through-work {
-          height: 8px;
-          // width: 80%;
-          left: 0;
-          right: 5%;
-          background-color: rgba(7,111,56, 0.8);
           position: absolute;
-          bottom: 10%;
-        }
-
+          top: -275px;
+          right: 25%;
         }
       }
+
+      .desktop-papers-image {
+        @include lg {
+          position: absolute;
+          top: -220px;
+          left: -17%;
+          z-index: -999;
+        }
+      }
+      
     }
+
+
+    
+    
   }
 
+// Desktop About Me
+.desktop-about-me-container {
+display: none;
 
+@include lg {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: flex-start
 }
+
+.desktop-view-work-container {
+
+  @include lg {
+    margin-top: 2rem;
+    padding-left: 0;
+  }
+  .view-work-button {
+    @include lg {
+
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      font-size: 1.4rem;
+      letter-spacing: .3rem;
+      position: relative;
+    }
+
+    .line-through-work {
+      height: 8px;
+      // width: 80%;
+      left: 0;
+      right: 5%;
+      background-color: rgba(7,111,56, 0.8);
+      position: absolute;
+      bottom: 10%;
+    }
+
+    }
+  }
+}
+
 
 // Headphones
 
@@ -546,9 +615,24 @@ hr {
   }
 }
 
+// .papers-container {
+
+//   position: relative;
+
+//   @include lg {
+//     display: none;
+//   }
+
+//   .papers-image {
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-63%)
+//   }
+// }
+
 // About me
 
-.about-me-container, .desktop-about-me-container {
+.about-me-container {
 
 
   @include lg {
@@ -563,6 +647,8 @@ hr {
     }
   }
 }
+
+
 
 // View Work
 
