@@ -24,7 +24,12 @@ const HomeScreen = (props) => {
     const desktopHeadphones = useRef(null)
 
 
-    const [changeShake, setChangeShake] = useState('shake-little')
+    const [changeShake, setChangeShake] = useState('shake-little');
+    const [toggler, setToggler] = useState('off');
+
+    const togglerHandler = () => {
+        toggler === 'on' ? setToggler('off') : setToggler('on')
+    }
 
    useInterval(() => {
        if(changeShake === 'shake-little') {
@@ -67,8 +72,12 @@ const HomeScreen = (props) => {
             
             <Container className="desktop-about-me-headphones-container" ref={desktopHeadphones}>
                 <Container className="desktop-images-container">
-                    <img src={Headphones} alt="Headphones" className={`desktop-headphones-image ${changeShake}`}></img>
+                    <img src={Headphones} alt="Headphones" className={`desktop-headphones-image ${changeShake} ${toggler}`}></img>
                     <img src={Papers} alt="Papers" className="desktop-papers-image"></img>
+                    <span className={`on-off-button`} onClick={togglerHandler}>
+
+                        <span className={`toggler-${toggler}`}></span>
+                    </span>
                     {/* <Container className="desktop-headphones-container">
                         
                     </Container>
