@@ -348,7 +348,8 @@ body {
     right: 0;
     background-color: rgba(7,111,56, 0.8);
     position: absolute;
-    bottom: 10%;
+    bottom: 25%;
+    z-index: -999;
   }
   
 }
@@ -703,6 +704,8 @@ display: none;
 .headphones-container {
 
   position: relative;
+  width: 100%;
+  height: auto;
 
   @include lg {
     display: none;
@@ -710,25 +713,30 @@ display: none;
 
   .headphones-image {
     position: absolute;
-    left: 50%;
-    transform: translateX(-63%)
+    left: 0;
+    transform: translateX(-60%);
+    height: 600px;
   }
 }
 
-// .papers-container {
+.papers-container {
 
-//   position: relative;
+  position: relative;
+  width: 100%;
 
-//   @include lg {
-//     display: none;
-//   }
+  @include lg {
+    display: none;
+  }
 
-//   .papers-image {
-//     position: absolute;
-//     left: 50%;
-//     transform: translateX(-63%)
-//   }
-// }
+  .papers-image {
+    position: absolute;
+    left: 60%;
+    top: 50px;
+    transform: translateX(-63%);
+    height: 350px;
+    z-index: -999;
+  }
+}
 
 // About me
 
@@ -853,11 +861,18 @@ display: none;
   }
 
   p {
-    font-size: 1.75rem;
+
+    
+    font-size: 1.5rem;
     line-height: 2.75rem;
     margin-bottom: 2rem;
     font-weight: 200;
     // width: 80%;
+
+    @include lg {
+      
+      font-size: 1.75rem;
+    }
   }
 
 }
