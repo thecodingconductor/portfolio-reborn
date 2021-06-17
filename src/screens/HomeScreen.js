@@ -72,18 +72,8 @@ const HomeScreen = (props) => {
             
             <Container className="desktop-about-me-headphones-container" ref={desktopHeadphones}>
                 <Container className="desktop-images-container">
-                    <img src={Headphones} alt="Headphones" className={`desktop-headphones-image ${changeShake} ${toggler}`}></img>
+                    <img src={Headphones} alt="Headphones" className={`desktop-headphones-image`}></img>
                     <img src={Papers} alt="Papers" className="desktop-papers-image"></img>
-                    {/* <span className={`on-off-button`} onClick={togglerHandler}>
-
-                        <span className={`toggler-${toggler}`}></span>
-                    </span> */}
-                    {/* <Container className="desktop-headphones-container">
-                        
-                    </Container>
-                    <Container className="desktop-papers-container">
-                        
-                    </Container> */}
                 </Container>
                 <Container className="desktop-about-me-container">
                     <p className="about-me-text">
@@ -99,7 +89,7 @@ const HomeScreen = (props) => {
                 </Container>
             </Container>
 
-            <Container className="headphones-container shake-little">
+            <Container className="headphones-container">
                 <img src={Headphones} alt="Headphones" className="headphones-image"></img>
             </Container>
             <Container className="papers-container">
