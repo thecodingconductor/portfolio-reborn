@@ -280,9 +280,13 @@ body {
   content: '';
   position: absolute;
   top: 0;
-  width: 3px;
+  width: 1px;
   height: 100%;
   background-color: $grid-lines;
+
+  @include lg {
+    width: 3px;
+  }
 }
 
 .col:last-of-type::before {
@@ -293,6 +297,10 @@ body {
   width: 3px;
   height: 100%;
   background-color: $grid-lines;
+
+  @include lg {
+    width: 3px;
+  }
 }
 
 .grid-container::after {
@@ -304,6 +312,10 @@ body {
   height: 100%;
   background-color: $grid-lines;
 
+  @include lg {
+    width: 3px;
+  }
+
 }
 
 .grid-container::before {
@@ -314,6 +326,10 @@ body {
   width: 3px;
   height: 100%;
   background-color: $grid-lines;
+
+  @include lg {
+    width: 3px;
+  }
 
 }
 
