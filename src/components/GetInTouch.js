@@ -22,7 +22,7 @@ const GetInTouch = () => {
                 I find the process of solving problems using code to be endlessly challenging
                 and fasinating, and I am eager to continue my journey.
             </p>
-            <p className="view-project" onClick={onClickHandler}>
+            <p className="view-project" onClick={() => onClickHandler()}>
                 GET IN TOUCH
                 <span className="line-through-work get-in-touch-line"></span>
             </p>

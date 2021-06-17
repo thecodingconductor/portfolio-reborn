@@ -12,7 +12,7 @@ import useInterval from '../hooks/useInterval'
 const HomeScreen = (props) => {
 
     const navContext = useContext(NavContext);
-    const { mobileNavAction} = navContext;
+    const { mobileNavAction } = navContext;
 
     useEffect(() => {
         mobileNavAction(false)

@@ -51,7 +51,6 @@ const Header = (props) => {
                   <Dropdown.Item href="/concertbuilder" className="d-flex justify-content-start align-items-center">Concert Builder</Dropdown.Item>
                   <Dropdown.Item href="/orchesnation" className="d-flex justify-content-start align-items-center">OrchesNation</Dropdown.Item>
                   <Dropdown.Item href="/marsrover" className="d-flex justify-content-start align-items-center">Mars Rover</Dropdown.Item>
-                  <Dropdown.Item href="#" className="d-flex justify-content-start align-items-center">Mars Rover</Dropdown.Item>
                 </DropdownButton>
                 <Nav.Link className="desktop-nav-link" href="mailto: tristan.raissherman@gmail.com">Contact</Nav.Link>
                 <Nav.Link className="desktop-nav-link" href="https://www.twitch.tv/orchestraobsessed" target="_blank">Twitch</Nav.Link>
