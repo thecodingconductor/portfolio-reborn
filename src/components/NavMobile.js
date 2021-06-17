@@ -34,7 +34,7 @@ const NavMobile = ({isMounted, setIsMounted}) => {
 
        
 
-        <Container className="mobile-nav-container" fluid style={isMounted ? mountedStyle: unMountedStyle}>
+        <Container className={`mobile-nav-container ${isMounted}`} fluid style={isMounted ? mountedStyle: unMountedStyle}>
             <Container className="nav-content-wrapper d-flex flex-column align-items-center">
                 <Container className="header-nav-overlay d-flex align-items-center justify-content-between" fluid>
                     <Container className="mobile-close-container">

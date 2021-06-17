@@ -6,6 +6,8 @@ import MarsRover from '../assets/marsRoverHome.png'
 import ArrowMobile from '../assets/arrow-mobile.svg'
 import Can from '../assets/img-can.svg'
 import Bubbles from './Bubbles';
+
+
 const FeaturedProjects = (props) => {
 
 
