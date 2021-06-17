@@ -43,8 +43,22 @@ $screen-xl-min: 1200px;
 
 @font-face {
   font-family: 'inter';
-  src: url('./fonts/Inter-VariableFont_slnt\,wght.ttf');
-  font-weight: normal;
+  src: url('./fonts/static/Inter-Black.ttf');
+  font-weight: 900;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('./fonts/static/Inter-Light.ttf');
+  font-weight: 200;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('./fonts/static/Inter-Regular.ttf');
+  font-weight: 400;
   font-style: normal
 }
   
@@ -417,6 +431,54 @@ hr {
             font-weight: bold;
           }
         }
+
+        .dropdown-menu {
+          @include lg {
+            width: 30rem;
+            height: 15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 0;
+            margin-top: 0;
+            padding-bottom: 0;
+          }
+
+          .dropdown-item {
+            @include lg {
+              height: 100%;
+              // background-color: $dark-blue;
+              font-family: pt-mono, monospace;
+              color: $white;
+              text-transform: uppercase;
+              font-weight: 700;
+              transition: all .2s ease-in-out;
+              padding-left: 1rem;
+            }
+          }
+
+          .dropdown-item:hover {
+            @include lg {
+              padding-left: 2rem;
+            }
+          }
+
+          .dropdown-item:first-of-type {
+            background-color: #161084
+          }
+
+          .dropdown-item:nth-of-type(2) {
+            background-color: #231C9F
+          }
+
+          .dropdown-item:nth-of-type(3) {
+            background-color: #3129B7
+          }
+
+          .dropdown-item:nth-of-type(4) {
+            background-color: #433BC4
+          }
+        }
         
       };
 
@@ -718,7 +780,7 @@ display: none;
 
   @include lg {
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: bolder;
   }
     .underline-full-width {
 
@@ -755,12 +817,10 @@ display: none;
     font-size: 1.75rem;
     line-height: 2.75rem;
     margin-bottom: 2rem;
+    font-weight: 200;
     // width: 80%;
   }
 
-  p:first-of-type {
-    // width: 80%;
-  }
 }
 
 .desktop-project-divider {
