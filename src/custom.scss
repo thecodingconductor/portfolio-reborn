@@ -185,6 +185,8 @@ body {
 
         .projects-expanded-container {
 
+          height: 100%;
+
           .projects-nav-link {
             padding: 0;
             padding-left: .5rem;
@@ -194,7 +196,7 @@ body {
             font-size: 1rem;
             color: $white;
             text-decoration: none;
-
+            height: 100%;
            
           }
 
@@ -1250,17 +1252,15 @@ display: none;
   0% {
     opacity: 0;
     left: -100%;
-    // visibility: hidden
+   
   }
 
-  // 99% {
-  //   opacity: 0
-  // }
+
 
   100% {
     opacity: 1;
     left: 0;
-    // visibilty: visible
+    
   }
 }
 
@@ -1268,41 +1268,37 @@ display: none;
   0% {
     opacity: 1;
     left: 0;
-    // width: 90%;
+    
   }
 
-  // 90% {
-  //   opacity: 1;
-  // }
 
   100% {
     opacity: 0;
     left: -100%;
-    // visibility: visible
   }
 }
 
 @keyframes projectsExpand {
   0% {
-    opacity: 1;
-    // justify-content: flex-start
+    opacity: 0;
+    // height: 0px;
   }
 
   100% {
     opacity: 1;
-    // justify-content: space-between
+    // height: 250px;
   }
 }
 
 @keyframes projectsCollapse {
   0% {
     opacity: 1;
-    // justify-content: space-between;
+    // height: 250px;
   }
 
   100% {
-    opacity: 1;
-    // justify-content: flex-start
+    opacity: 0;
+  //   height: 0px;
   }
 }
 

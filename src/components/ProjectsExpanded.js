@@ -8,17 +8,16 @@ const ProjectsExpanded = ({isProjectsMounted, setIsProjectsMounted}) => {
     };
 
     const expandedStyles = {
-        animation: "projectsCollapse 700ms ease-out"
-        // animationFillMode: "forwards"
+        animation: "projectsCollapse 700ms ease-out",
+        animationFillMode: "forwards"
     }
 
 
     return (
-        <Nav className="flex-column projects-expanded-container" style={isProjectsMounted ? expandedStyles: collapsedStyles}>
+        <Nav className="flex-column projects-expanded-container" style={isProjectsMounted ? collapsedStyles : expandedStyles}>
             <Nav.Link className="projects-nav-link" href="/concertbuilder">Concert Builder</Nav.Link>
             <Nav.Link className="projects-nav-link" href="/orchesnation">OrchesNation</Nav.Link>
             <Nav.Link className="projects-nav-link" href="/marsrover">Mars Rover</Nav.Link>
-            
         </Nav>
     )
 }
