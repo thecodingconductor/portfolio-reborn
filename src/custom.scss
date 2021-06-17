@@ -185,7 +185,7 @@ body {
 
         .projects-expanded-container {
 
-          height: 100%;
+          opacity: 1;
 
           .projects-nav-link {
             padding: 0;
@@ -196,7 +196,6 @@ body {
             font-size: 1rem;
             color: $white;
             text-decoration: none;
-            height: 100%;
            
           }
 
