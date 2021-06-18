@@ -1153,8 +1153,19 @@ display: none;
     @include lg {
       flex-direction: row;
     }
+
+    
+    }
   }
 
+  .contact-info-container {
+    @include lg {
+      font-size: 1.75rem;
+      line-height: 2.75rem;
+      margin-bottom: 4rem;
+    }
+
+  }
   .follow-container {
     margin-bottom: 4rem;
 
@@ -1173,7 +1184,7 @@ display: none;
     }
   }
 
-}
+
 
 .copyright-container {
 
