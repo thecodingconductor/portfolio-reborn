@@ -1168,6 +1168,9 @@ display: none;
   }
 
   .contact-info-container {
+
+    width: 80%;
+
     @include lg {
       font-size: 1.75rem;
       line-height: 2.75rem;
