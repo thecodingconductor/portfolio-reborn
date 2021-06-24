@@ -3,7 +3,7 @@ import {Container, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import MarsRoverHome from '../assets/desktopMarsRoverHome.png'
 import MarsRoverFavorites from '../assets/desktopMarsRoverFavorites.png'
-import ConcertBuilderFeature from '../assets/concertBuilderFeature.png'
+import ConcertBuilderFeature from '../assets/concertBuilderDesktop.png'
 
 
 const MarsRover = () => {
@@ -59,7 +59,7 @@ const MarsRover = () => {
                 <Link to="/concertbuilder">
                     <Container className="project-container" fluid>
 
-                        <img src={ConcertBuilderFeature} alt="Concert Builder" className="mars-rover-photo" />
+                        <img src={ConcertBuilderFeature} alt="Concert Builder" className="mars-rover-photo next-project-image" />
                     </Container>
                 </Link>
             </div>

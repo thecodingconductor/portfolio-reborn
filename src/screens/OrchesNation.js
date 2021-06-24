@@ -3,7 +3,7 @@ import {Container, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import OrchesNationHome from '../assets/desktopOrchesNationHome.png'
 import OrchesNationFeature from '../assets/desktopOrchesNationFeature.png'
-import MarsRoverHome from '../assets/desktopMarsRoverHome.png'
+import MarsRoverHome from '../assets/desktopMarsRover.png'
 
 
 const OrchesNation = () => {
@@ -60,7 +60,7 @@ const OrchesNation = () => {
                 <Link to='/marsrover'>
                     <Container className="project-container" fluid>
 
-                        <img src={MarsRoverHome} alt="Mars Rover Home" className="mars-rover-photo" />
+                        <img src={MarsRoverHome} alt="Mars Rover Home" className="mars-rover-photo next-project-image" />
                     </Container>
                 </Link>
             </div>

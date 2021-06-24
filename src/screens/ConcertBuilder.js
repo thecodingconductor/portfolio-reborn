@@ -3,7 +3,7 @@ import {Container, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import ConcertBuilderFeature from '../assets/concertBuilderFeature.png'
 import ConcertBuilderPage from '../assets/concert-builder-new.png'
-import OrchesNationHome from '../assets/orchesNationHomeFeature.png'
+import OrchesNationHome from '../assets/desktopOrchesNation.png'
 
 
 const ConcertBuilder = () => {
@@ -23,7 +23,7 @@ const ConcertBuilder = () => {
                 <div className="text-container">
                     
                     <p>Full-stack application designed to assist orchestra conductors to research, develop, and plan concerts.</p>
-                    <p>Built entirely without frameworks. Vanilla Javascript, CSS, and HTML. Flask backend with REST API's.</p>
+                    <p>In order to test my grasp of fundamental concepts, this project was built entirely without any frontend frameworks. Vanilla Javascript, CSS, and HTML. Flask backend with REST API's.</p>
                 </div>
 
                 <div className="d-flex flex-column justify-content-between button-container">
@@ -60,7 +60,7 @@ const ConcertBuilder = () => {
                 <Link to="/orchesnation">
                     <Container className="project-container" fluid>
 
-                        <img src={OrchesNationHome} alt="OrchesNation" className="mars-rover-photo" />
+                        <img src={OrchesNationHome} alt="OrchesNation" className="mars-rover-photo next-project-image" />
                     </Container>
                 </Link>
             </div>
