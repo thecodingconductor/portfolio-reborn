@@ -1258,7 +1258,12 @@ display: none;
 }
 
 .project-image-bottom {
-  margin-bottom: 15.625rem;;
+
+  margin-bottom: 10rem;
+  @include lg {
+    margin-bottom: 15.625rem;
+  }
+  
 }
 
 .next-project-image {
