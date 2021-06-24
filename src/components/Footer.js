@@ -31,7 +31,7 @@ const Footer = () => {
            <Container className="contact-info-container">
                     <p>tristan.raissherman@gmail.com</p>
                     <p>203-610-4231</p>
-                </Container>
+            </Container>
            
            <Container className="copyright-container">
                 <p>Copyright 2021 Tristan Rais-Sherman</p>

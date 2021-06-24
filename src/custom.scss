@@ -678,6 +678,8 @@ display: none;
 
 .desktop-view-work-container {
 
+  position: relative;
+
   @include lg {
     margin-top: 2rem;
     padding-left: 0;
@@ -701,6 +703,13 @@ display: none;
       background-color: rgba(7,111,56, 0.8);
       position: absolute;
       bottom: 10%;
+    }
+
+    .arrow-down {
+      @include lg {
+        position: absolute;
+        right: -45px;
+      }
     }
 
     }

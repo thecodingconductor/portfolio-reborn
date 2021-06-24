@@ -7,6 +7,7 @@ import DesktopFeaturedProjects from '../components/DesktopFeaturedProjects'
 import GetInTouch from '../components/GetInTouch'
 import NavContext from '../context/nav/navContext'
 import useInterval from '../hooks/useInterval'
+import ArrowDown from '../assets/arrowdown.svg'
 
 
 const HomeScreen = (props) => {
@@ -84,6 +85,7 @@ const HomeScreen = (props) => {
                         <Button className="view-work-button view-project desktop-view-work" onClick={executeScroll}>
                             View My Work
                             <span className="line-through-work"></span>
+                            <img src={ArrowDown} className="arrow-down" alt="arrow down"></img>
                         </Button>
                     </Container>
                 </Container>
