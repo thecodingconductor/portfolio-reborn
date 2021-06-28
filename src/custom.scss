@@ -77,13 +77,16 @@ $gray: #00000029;
 $off-white: #FFFFFF19;
 $grid-lines: #76FFF408;
 
-* {
-  margin: 0;
-  padding: 0;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
 
-html {
+
+html,body {
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, p {
@@ -94,15 +97,15 @@ h1, h2, h3, h4, p {
 }
 
 .container-fluid {
-  padding: 0;
-  margin: 0;
+  // padding: 0;
+  // margin: 0;
 }
 
 body {
     height: 100%;
     font-family: "Helvetica", sans-serif;
     background: $very-dark-blue;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 .btn:focus,.btn:active {
@@ -254,15 +257,15 @@ body {
 // Main Body Container
 
 .main-body-container {
-  padding-left: 2.3rem;
-  padding-right: 2.3rem;
+  // padding-left: 2.3rem;
+  // padding-right: 2.3rem;
   position: relative;
 }
 
 .grid-container {
   position: absolute;
-  padding-left: 2.3rem;
-  padding-right: 2.3rem;
+  // padding-left: 2.3rem;
+  // padding-right: 2.3rem;
   top: 0;
   bottom: 0;
   left: 0;
@@ -310,7 +313,7 @@ body {
   position: absolute;
   top: 0;
   right:7px;
-  width: 3px;
+  width: 1px;
   height: 100%;
   background-color: $grid-lines;
 
@@ -325,7 +328,7 @@ body {
   position: absolute;
   top: 0;
   left: 20px;
-  width: 3px;
+  width: 1px;
   height: 100%;
   background-color: $grid-lines;
 
@@ -530,9 +533,10 @@ hr {
   .main-title{
     font-family: 'inter', sans-serif;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 150%;
-    text-align: center;
+    text-align: left;
+    letter-spacing: 0;
 
     @include lg {
       font-size: 5rem;
@@ -769,7 +773,7 @@ display: none;
 
 .about-me-container {
 
-
+  padding-left: 0;
   @include lg {
     display: none;
   }
@@ -803,6 +807,7 @@ display: none;
   margin-top: 1.5rem;
 
   margin-bottom: 4rem;
+  padding-left: 0;
 
   @include lg {
     display: none;
@@ -864,6 +869,7 @@ display: none;
       left: 0;
       right: 0;
       bottom: 20%;
+      display: none;
 
       @include lg {
         left: -40%;
@@ -910,6 +916,7 @@ display: none;
 }
 
 .mobile-project-divider {
+  display: none;
   margin-left: -40px;
   margin-right: -40px;
 }

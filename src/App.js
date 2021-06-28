@@ -16,9 +16,9 @@ function App() {
     <>
       <NavState>
         <Router>
-          <Container className="global-container" fluid>
+         
             <Container className="main-body-container">
-              <BackgroundGrid />
+              {/* <BackgroundGrid /> */}
               <Header />
               <Route exact path='/' component={HomeScreen}></Route>
               <Route exact path='/concertbuilder' component={ConcertBuilder}></Route>
@@ -26,7 +26,7 @@ function App() {
               <Route exact path='/marsrover' component={MarsRover}></Route>
             </Container>
             <Footer />
-          </Container>
+         
         </Router>
       </NavState>
       

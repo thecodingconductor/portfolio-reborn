@@ -92,7 +92,7 @@ const HomeScreen = (props) => {
             </Container>
 
             <Container className="headphones-container">
-                <img src={Headphones} alt="Headphones" className="headphones-image"></img>
+                {/* <img src={Headphones} alt="Headphones" className="headphones-image"></img> */}
             </Container>
             <Container className="papers-container">
                 <img src={Papers} alt="Papers" className="papers-image"></img>
