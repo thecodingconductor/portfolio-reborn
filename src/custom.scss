@@ -83,9 +83,9 @@ $grid-lines: #76FFF408;
 // }
 
 
-html,body {
-  height: 100%;
-  max-width: 100%;
+html {
+  // height: 100%;
+  // max-width: 100%;
   // overflow-x: hidden;
 }
 
@@ -103,9 +103,11 @@ h1, h2, h3, h4, p {
 
 body {
     height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: "Helvetica", sans-serif;
     background: $very-dark-blue;
-    // overflow-x: hidden;
+//     overflow-x: hidden;
 }
 
 .btn:focus,.btn:active {
@@ -878,8 +880,8 @@ display: none;
       height: 1px;
       background-color: #fff;
       position: absolute;
-      left: -3rem;
-      right: -3rem;
+      left: 0;
+      right: 0;
       bottom: 20%;
       // display: none;
 
@@ -931,8 +933,8 @@ display: none;
 
 .mobile-project-divider {
   // display: none;
-  margin-left: -40px;
-  margin-right: -40px;
+  // margin-left: -40px;
+  // margin-right: -40px;
 }
 
 .view-projects-selector {
