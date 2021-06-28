@@ -18,7 +18,7 @@ function App() {
         <Router>
          
             <Container className="main-body-container">
-              {/* <BackgroundGrid /> */}
+              <BackgroundGrid />
               <Header />
               <Route exact path='/' component={HomeScreen}></Route>
               <Route exact path='/concertbuilder' component={ConcertBuilder}></Route>

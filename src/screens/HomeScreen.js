@@ -92,7 +92,7 @@ const HomeScreen = (props) => {
             </Container>
 
             <Container className="headphones-container">
-                {/* <img src={Headphones} alt="Headphones" className="headphones-image"></img> */}
+                <img src={Headphones} alt="Headphones" className="headphones-image"></img>
             </Container>
             <Container className="papers-container">
                 <img src={Papers} alt="Papers" className="papers-image"></img>
@@ -110,6 +110,7 @@ const HomeScreen = (props) => {
                 <Button className="view-work-button view-project" onClick={executeScroll}>
                     View My Work
                     <span className="line-through-work"></span>
+                    <img src={ArrowDown} className="arrow-down" alt="arrow down"></img>
                 </Button>
             </Container>
             <Container className="featured-projects-container" fluid ref={featuredProjects}>
