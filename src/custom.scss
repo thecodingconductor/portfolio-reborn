@@ -924,6 +924,12 @@ display: none;
     }
   }
 
+  .desktop-project-left {
+    @include lg {
+      padding: 0;
+    }
+  }
+
 }
 
 .desktop-project-divider {
@@ -952,6 +958,10 @@ display: none;
   margin-top: 2rem;
   transition: all .2s ease-in-out;
 
+  @include lg {
+    padding: 0;
+  }
+
   .view-project {
     margin-bottom: 0;
   }
@@ -976,6 +986,10 @@ display: none;
 .projects-tags-container{
   margin-top: 3rem;
   margin-bottom: 3rem;
+
+  @include lg {
+    padding: 0;
+  }
 }
 
 .project-tag {
@@ -1056,7 +1070,7 @@ display: none;
     max-width: 100%;
 
     @include lg {
-      left: -25%;
+      left: -15%;
       top: -75%;
     }
   }
@@ -1204,8 +1218,11 @@ display: none;
   .follow-container {
     margin-bottom: 4rem;
 
+
     @include lg {
       width: 30%;
+      margin-left: 0;
+      padding: 0;
     }
   }
 
@@ -1376,7 +1393,7 @@ display: none;
 
   @include lg {
     height: 30rem;
-    left: -20%;
+    left: -10%;
     
   }
 }
