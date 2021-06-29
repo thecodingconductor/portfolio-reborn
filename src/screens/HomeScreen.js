@@ -56,16 +56,26 @@ const HomeScreen = (props) => {
           });
     }
 
+    const openConductorPage = () => {
+        window.open('https://www.tristanraissherman.com', '_blank').focus()
+    }
+
+    const openTwitchPage = () => {
+        window.open('https://www.twitch.tv/orchestraobsessed', '_blank').focus()
+    }
+
+
+
     return (
         
             <>
            
             <Container className="main-title-container" fluid>
                 <h1 className="main-title">Front-end developer, 
-                <span className="text-line-conductor">conductor,
+                <span className="text-line-conductor" onClick={openConductorPage}>conductor,
                     <span className="line-through-conductor"></span>
                 </span>
-                <span className="text-line-streamer">streamer,
+                <span className="text-line-streamer" onClick={openTwitchPage}>streamer,
                     <span className="line-through-streamer"></span>
                 </span>
                 <br></br>and seltzer addict.</h1>
