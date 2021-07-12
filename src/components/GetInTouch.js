@@ -8,9 +8,7 @@ const GetInTouch = () => {
         window.open("mailto: tristan.raissherman@gmail.com")
     }
 
-    // const [showButton, setShowButton] = useState(true);
-    // const [showMessage, setShowMessage] = useState(false);
-    
+
     return (
         <Container className="get-in-touch-container d-flex flex-column align-items-center" fluid>
             <p className="get-in-touch-text">

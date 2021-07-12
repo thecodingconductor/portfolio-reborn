@@ -25,32 +25,19 @@ const HomeScreen = (props) => {
     const desktopHeadphones = useRef(null)
 
 
-    const [changeShake, setChangeShake] = useState('shake-little');
-    const [toggler, setToggler] = useState('off');
-
-    const togglerHandler = () => {
-        toggler === 'on' ? setToggler('off') : setToggler('on')
-    }
-
-   useInterval(() => {
-       if(changeShake === 'shake-little') {
-            setChangeShake('shake-hard')
-       } else {
-           setChangeShake('shake-little')
-       }
-   }, 500)
     
 
 
     const executeScroll = (e) => {
-        console.log(e.target)
-
+        
         e.target.classList.contains('desktop-view-work') ? 
         
         window.scrollTo({
             behavior: "smooth",
             top: desktopFeaturedProjects.current.offsetTop
-          }) : window.scrollTo({
+          }) : 
+          
+        window.scrollTo({
             behavior: "smooth",
             top: featuredProjects.current.offsetTop
           });

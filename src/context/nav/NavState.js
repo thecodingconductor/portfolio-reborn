@@ -7,7 +7,6 @@ const NavState = props => {
 
     const initialState = {
         navOpen: false,
-        // testNavOpen: "unmounted",
         projectsExpanded: false
     }
 
@@ -22,13 +21,6 @@ const NavState = props => {
         })
     }
 
-    // const testMobileNavAction = (navAction) => {
-
-    //     dispatch({
-    //         type: NAV_OVERLAY_OPEN,
-    //         payload: navAction
-    //     })
-    // }
 
     // Open/Close Projects expand
     const expandProjects = (projectsAction) => {
