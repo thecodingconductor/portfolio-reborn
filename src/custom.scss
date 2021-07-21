@@ -254,10 +254,10 @@ body {
   position: relative;
 }
 
+
+// Grid Set up
 .grid-container {
   position: absolute;
-  // padding-left: 2.3rem;
-  // padding-right: 2.3rem;
   top: 0;
   bottom: 0;
   left: 0;
@@ -553,9 +553,10 @@ hr {
   bottom: 20%;
   left: 1%;
   right: 8%;
+  transition: height .5s;
 
   @include lg {
-    height: 15px;
+    height: 5px;
   }
 }
 
@@ -567,11 +568,19 @@ hr {
   background-color: #2700FF6B;
   position: absolute;
   bottom: 20%;
+  transition: height .5s ;
 
+  @include lg {
+    height: 5px;
+  }
+}
+
+.text-line-conductor:hover .line-through-conductor, .text-line-streamer:hover .line-through-streamer {
   @include lg {
     height: 15px;
   }
 }
+
 
 // Desktop Headphones and About Me
 .desktop-about-me-headphones-container {
@@ -1119,6 +1128,10 @@ display: none;
 }
 
 // Project Detail Pages
+
+.project-container {
+  padding-left: 0;
+}
 
 .inner {
 
